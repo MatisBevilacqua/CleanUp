@@ -1,0 +1,12 @@
+<%= stylesheet_link_tag "application" %>
+<h1><span>Créer</span> mon compte</h1>
+<%= form_for @user do |f| %>
+    <%= f.text_field :name, required:true, placeholder: 'Prénom'%>
+    <%= f.text_field :surname,required:true,  placeholder:'Nom' %>
+    <%= f.email_field :email,required:true,  placeholder: 'Adresse email' %>
+    <%= f.password_field :password,required:true,  placeholder: 'Mot de passe' %>
+  <div id="button">
+    <button class="next back" type="submit">Précédent</button>
+    <button class="next submit" type="submit">Créer un compte</button>
+  </div>
+<% end %>

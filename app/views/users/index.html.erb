@@ -1,4 +1,7 @@
 <%= stylesheet_link_tag "index.css" %>
+<header>
+<i class="fa-solid fa-house"></i>
+</header>
 <section id="welcome">
   <div id="pictures_profils">
   </div>
@@ -17,11 +20,13 @@
       </div>
       <div class="users_profils_contents">
         <h3 class="name"><%= item.name %></h3>
-        <p>24 /h<span class="days"> | </span>7j / 7</p>
+        <p class="days_work">24€ <sub>/h</sub><span class="days"> | </span>7j / 7</p>
         <p class="locate">Paris</p>
       </div>
     </div>
-    <div class="users_profils_bottom"></div>
+    <div class="users_profils_bottom">
+      <a>Voir le profil</a>
+    </div>
   </article>
 <% end %>
 </section>

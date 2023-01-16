@@ -13,6 +13,9 @@ header{
     background: #FFF;
     position: fixed;
     bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 body{
@@ -49,7 +52,7 @@ img{
 }
 
 #get_profil{
-    width: 308px;
+    width: 88vw;
     height: 50px;
     background: #EDA254;
     border-radius: 15px;
@@ -60,11 +63,16 @@ img{
 }
 
 #pictures_profils{
-    width: 50px;
-    height: 50px;
-    background: #0C3469;
+    width: 70px;
+    height: 70px;
     border-radius: 13px;
     margin-bottom: 4vh;
+}
+
+#pictures_profils > img{
+    width: 100%;
+    height: 100%;
+    border-radius: 13px;
 }
 
 #likes_profiles{
@@ -103,8 +111,12 @@ img{
 .users_profils_img{
     width: 35%;
     height: 100%;
-    background: #0C3469;
     border-top-left-radius: 4px;
+}
+
+.users_profils_img > img{
+    width: 100%;
+    height: 100%;
 }
 
 .users_profils_bottom{
@@ -149,4 +161,21 @@ img{
 
 .name{
     font-size: 23px;
+}
+
+
+ul{
+    padding: 0;
+    width: 60vw;
+    display: flex;
+    justify-content: space-between;
+    font-size: 25px;
+}
+
+.on{
+    color:#0C3469;
+}
+
+.off{
+    color: #D9D9D9;
 }

@@ -1,9 +1,14 @@
 <%= stylesheet_link_tag "index.css" %>
 <header>
-<i class="fa-solid fa-house"></i>
+  <ul>
+    <a><i class="fa-solid fa-house on"></i></a>
+    <a><i class="fa-solid fa-magnifying-glass off"></i></a>
+    <a><i class="fa-solid fa-user off"></i></a>
+  </ul>
 </header>
 <section id="welcome">
   <div id="pictures_profils">
+     <%= image_tag "1673041909611.jpg" %>
   </div>
   <p id="name">Hey Matis Bevilacqua !</p>
   <h1 id="pitch">Des experts pour redonner de l'eclat à votre bien</h1>
@@ -16,7 +21,7 @@
   <article class="users_profils">
     <div class="users_profils_top">
       <div class="users_profils_img">
-
+        <%= image_tag "young-and-beautiful-woman-in-pink-warm-sweater-natural-look-smiling-portrait-on-isolated-long-hair.jpg" %>
       </div>
       <div class="users_profils_contents">
         <h3 class="name"><%= item.name %></h3>

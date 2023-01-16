@@ -1,8 +1,27 @@
 <%= stylesheet_link_tag "index.css" %>
-<div id="picture_profile">
-</div>
-<h1 class="hello name">Hello Matis Bevilacqua</h1>
-<h2 class="hello welcome">Welcome back !</h2>
-<div id="profil_configure">
-  <a href="#">Configurer mon profil</a>
-</div>
+<section id="welcome">
+  <div id="pictures_profils">
+  </div>
+  <p id="name">Hey Matis Bevilacqua !</p>
+  <h1 id="pitch">Des experts pour redonner de l'eclat à votre bien</h1>
+  <a id="get_profil">Accéder à mon profil</a>
+</section>
+<section id="likes_profiles">
+  <h2 id="likes_title">Vous avez aimez</h2>
+
+<% @users.each do |item| %>
+  <article class="users_profils">
+    <div class="users_profils_top">
+      <div class="users_profils_img">
+
+      </div>
+      <div class="users_profils_contents">
+        <h3 class="name"><%= item.name %></h3>
+        <p>24 /h<span class="days"> | </span>7j / 7</p>
+        <p class="locate">Paris</p>
+      </div>
+    </div>
+    <div class="users_profils_bottom"></div>
+  </article>
+<% end %>
+</section>

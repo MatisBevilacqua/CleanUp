@@ -6,6 +6,7 @@ class CreateUsers < ActiveRecord::Migration[7.0]
       t.text :locate
       t.text :description
       t.text :surname
+      t.text :name
     end
   end
 end

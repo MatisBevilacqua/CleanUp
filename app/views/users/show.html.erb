@@ -1,0 +1,16 @@
+<%= stylesheet_link_tag "show" %>
+<div id="search_container">
+<input class="shearch_bar"placeholder="Ville, région...">
+<div id="container_presta">
+    <% @users.each do |item| %>
+            <div class="presta_box">
+                <div class="presta_box_break top">
+                    <h2><%= item.name %></h2>
+                    <h2><%= item.surname %></h2>
+                </div>
+                <div class="presta_box_break">
+
+                </div>
+            </div>
+    <% end %>
+</div>

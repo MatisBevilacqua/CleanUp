@@ -11,7 +11,9 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     width: 100%;
+    background: #FFFF;
 }
 
 form{
@@ -25,8 +27,9 @@ form{
     position: absolute;
     bottom: 0;
     width: 100%;
-    justify-content: space-between;
+    justify-content: center;
     display: flex;
+    align-items: center;
 }
 
 .next{
@@ -35,44 +38,45 @@ form{
     width: 157px;
     height: 50px;
     color: white;
-    border-radius: 15px;
+    border-radius: 35px;
     font-size: 16px;
-    margin-bottom: 2vh;
+    margin-bottom: 4vh;
 }
 
 .submit{
-    background: #93C3C1;
-    margin-right: 4vw;
+    background: #EDA254;
+    margin: 0;
+    width: 90vw;
+    margin-bottom: 5vw;
 }
 
-.back{
-    background: #344160;
-    margin-left: 4vw;
-}
 
-h1{
+#new{
     position: absolute;
     top: 0;
     left: 4%;
-    top: 4%;
+    margin-top:4vh;
     font-weight: bold;
+    color: #0C3469;
 }
 
-input{
+.log_form{
     border: none;
     outline: none;
-    border-bottom: 1px solid #93C3C1;
-    color: #344160;
-    font-size: 18px;
-    width: 70vw;
+    background: #F7F8FC;
+    border-radius: 15px;
+    color: #0C3469;
+    font-size: 16px;
+    width: 85vw;
     padding-left: 5vw;
     padding-bottom: 2vh;
+    height: 50px;
 }
 
 span{
-    color: #93C3C1;
+    color: #EDA254;
 }
 
 input::placeholder{
-    color: #344160;
+    color: #B5BBCA;
 }

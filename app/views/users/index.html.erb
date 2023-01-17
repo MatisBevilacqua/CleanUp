@@ -6,32 +6,36 @@
     <a><i class="fa-solid fa-user off"></i></a>
   </ul>
 </header>
+<div id="img_bottom">
+<div>
 <section id="welcome">
   <div id="pictures_profils">
-     <%= image_tag "1673041909611.jpg" %>
+      <%= image_tag "1673041909611.jpg" %>
   </div>
   <p id="name">Hey Matis Bevilacqua !</p>
-  <h1 id="pitch">Des experts pour redonner de l'eclat à votre bien</h1>
+  <h1 id="pitch">Des experts pour redonner de l'eclat à votre interieur</h1>
   <a id="get_profil">Accéder à mon profil</a>
 </section>
 <section id="likes_profiles">
-  <h2 id="likes_title">Vous avez aimez</h2>
-
-<% @users.each do |item| %>
-  <article class="users_profils">
-    <div class="users_profils_top">
-      <div class="users_profils_img">
-        <%= image_tag "young-and-beautiful-woman-in-pink-warm-sweater-natural-look-smiling-portrait-on-isolated-long-hair.jpg" %>
+  <h2 id="likes_title">Vous avez aimé</h2>
+  <% @users.each do |item| %>
+    <article class="users_profils">
+      <div class="users_profils_top">
+        <div class="users_profils_img">
+          <%= image_tag "young-and-beautiful-woman-in-pink-warm-sweater-natural-look-smiling-portrait-on-isolated-long-hair.jpg" %>
+        </div>
+        <div class="users_profils_contents">
+          <h3 class="name"><%= item.name %></h3>
+          <p class="days_work">24€ <sub>/h</sub><span class="days"> | </span>7j / 7</p>
+          <p class="locate"><i class="fa-solid fa-location-dot"></i>Paris</p>
+        </div>
       </div>
-      <div class="users_profils_contents">
-        <h3 class="name"><%= item.name %></h3>
-        <p class="days_work">24€ <sub>/h</sub><span class="days"> | </span>7j / 7</p>
-        <p class="locate">Paris</p>
+      <div class="users_profils_description">
+        <p>Cristina 46ans, 5 enfants, femme au foyer, je suis  à la recherche d'un poste de femme de ménage.</p>
       </div>
-    </div>
-    <div class="users_profils_bottom">
-      <a>Voir le profil</a>
-    </div>
-  </article>
-<% end %>
+      <div class="users_profils_bottom">
+        <a>Voir le profil</a>
+      </div>
+    </article>
+  <% end %>
 </section>

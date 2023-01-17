@@ -15,6 +15,14 @@ class UsersController < ApplicationController
     @user = User.new
   end
 
+  def find
+    @user = if params[:search]
+      User.where("name LIKE ?", "%#{params[:search][0..2]}%")
+    else 
+      User.all
+    end
+  end
+
   def create
     user =  User.create(user_params)
     redirect_to('/users/index/')

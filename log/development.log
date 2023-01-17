@@ -4840,3 +4840,3269 @@ Processing by UsersController#index as HTML
 Completed 200 OK in 947ms (Views: 206.3ms | ActiveRecord: 727.6ms | Allocations: 12685)
 
 
+Started GET "/" for 127.0.0.1 at 2023-01-17 19:51:11 +0100
+  [1m[36mActiveRecord::SchemaMigration Pluck (16.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by UsersController#welcome as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/welcome.html.erb within layouts/application
+  Rendered users/welcome.html.erb within layouts/application (Duration: 89.9ms | Allocations: 59864)
+  Rendered layout layouts/application.html.erb (Duration: 96.8ms | Allocations: 74486)
+Completed 200 OK in 104ms (Views: 98.9ms | ActiveRecord: 0.0ms | Allocations: 79929)
+
+
+Started GET "/users/index" for 127.0.0.1 at 2023-01-17 19:51:22 +0100
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (30.4ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:21
+  Rendered users/index.html.erb within layouts/application (Duration: 297.3ms | Allocations: 19697)
+  Rendered layout layouts/application.html.erb (Duration: 302.7ms | Allocations: 22091)
+Completed 200 OK in 309ms (Views: 50.5ms | ActiveRecord: 253.0ms | Allocations: 23062)
+
+
+Started GET "/users/index" for 127.0.0.1 at 2023-01-17 20:08:38 +0100
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (17.1ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:21
+  Rendered users/index.html.erb within layouts/application (Duration: 136.8ms | Allocations: 2595)
+  Rendered layout layouts/application.html.erb (Duration: 141.1ms | Allocations: 5009)
+Completed 200 OK in 143ms (Views: 141.8ms | ActiveRecord: 33.4ms | Allocations: 5337)
+
+
+Started GET "/users/index" for 127.0.0.1 at 2023-01-17 20:11:50 +0100
+  [1m[36mActiveRecord::SchemaMigration Pluck (19.1ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (18.3ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:21
+  Rendered users/index.html.erb within layouts/application (Duration: 167.8ms | Allocations: 79630)
+  Rendered layout layouts/application.html.erb (Duration: 174.6ms | Allocations: 94233)
+Completed 200 OK in 180ms (Views: 97.4ms | ActiveRecord: 78.7ms | Allocations: 100268)
+
+
+Started GET "/users/index" for 127.0.0.1 at 2023-01-17 20:13:56 +0100
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (21.8ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:21
+  Rendered users/index.html.erb within layouts/application (Duration: 44.1ms | Allocations: 2485)
+  Rendered layout layouts/application.html.erb (Duration: 49.5ms | Allocations: 4911)
+Completed 200 OK in 51ms (Views: 28.4ms | ActiveRecord: 21.8ms | Allocations: 5245)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2023-01-17 20:14:00 +0100
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 22.4ms | Allocations: 5575)
+  Rendered layout layouts/application.html.erb (Duration: 25.3ms | Allocations: 7814)
+Completed 200 OK in 28ms (Views: 26.0ms | ActiveRecord: 0.0ms | Allocations: 8234)
+
+
+Started GET "/users/index" for 127.0.0.1 at 2023-01-17 20:21:42 +0100
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (16.8ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:21
+  Rendered users/index.html.erb within layouts/application (Duration: 119.7ms | Allocations: 4727)
+  Rendered layout layouts/application.html.erb (Duration: 130.7ms | Allocations: 19139)
+Completed 200 OK in 133ms (Views: 131.6ms | ActiveRecord: 33.0ms | Allocations: 20737)
+
+
+Started GET "/users/find" for 127.0.0.1 at 2023-01-17 20:21:48 +0100
+Processing by UsersController#find as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  Rendered users/find.html.erb within layouts/application (Duration: 15.1ms | Allocations: 5099)
+  Rendered layout layouts/application.html.erb (Duration: 15.4ms | Allocations: 5171)
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.0ms | Allocations: 5545)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `find_path' for #<ActionView::Base:0x0000000000f190>
+Did you mean?  font_path):
+    1: <%= form_tag(find_path, method: :get) do %>
+    2:   <%= text_field_tag :search, params[:search] %>
+    3:   <%= submit_tag "Search" %>
+    4: <% end %>
+  
+app/views/users/find.html.erb:1
+Started GET "/users/find" for 127.0.0.1 at 2023-01-17 20:22:03 +0100
+Processing by UsersController#find as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  Rendered users/find.html.erb within layouts/application (Duration: 2.6ms | Allocations: 1138)
+  Rendered layout layouts/application.html.erb (Duration: 7.7ms | Allocations: 3901)
+Completed 200 OK in 14ms (Views: 11.5ms | ActiveRecord: 0.0ms | Allocations: 4930)
+
+
+Started POST "/users/find?method=get" for 127.0.0.1 at 2023-01-17 20:22:06 +0100
+  
+ActionController::RoutingError (No route matches [POST] "/users/find"):
+  
+Started GET "/users/find" for 127.0.0.1 at 2023-01-17 20:22:06 +0100
+Processing by UsersController#find as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  Rendered users/find.html.erb within layouts/application (Duration: 0.6ms | Allocations: 499)
+  Rendered layout layouts/application.html.erb (Duration: 2.7ms | Allocations: 2942)
+Completed 200 OK in 3ms (Views: 3.0ms | ActiveRecord: 0.0ms | Allocations: 3275)
+
+
+Started POST "/users/find?method=get" for 127.0.0.1 at 2023-01-17 20:22:08 +0100
+  
+ActionController::RoutingError (No route matches [POST] "/users/find"):
+  
+Started GET "/users/find" for 127.0.0.1 at 2023-01-17 20:22:09 +0100
+Processing by UsersController#find as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  Rendered users/find.html.erb within layouts/application (Duration: 0.8ms | Allocations: 505)
+  Rendered layout layouts/application.html.erb (Duration: 2.8ms | Allocations: 2967)
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.0ms | Allocations: 3305)
+
+
+Started POST "/users/find?method=get" for 127.0.0.1 at 2023-01-17 20:22:16 +0100
+  
+ActionController::RoutingError (No route matches [POST] "/users/find"):
+  
+Started GET "/users/find" for 127.0.0.1 at 2023-01-17 20:22:16 +0100
+Processing by UsersController#find as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  Rendered users/find.html.erb within layouts/application (Duration: 0.8ms | Allocations: 499)
+  Rendered layout layouts/application.html.erb (Duration: 3.3ms | Allocations: 2951)
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.0ms | Allocations: 3283)
+
+
+Started POST "/users/find?method=get" for 127.0.0.1 at 2023-01-17 20:22:18 +0100
+  
+ActionController::RoutingError (No route matches [POST] "/users/find"):
+  
+Started GET "/users/find" for 127.0.0.1 at 2023-01-17 20:22:18 +0100
+Processing by UsersController#find as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  Rendered users/find.html.erb within layouts/application (Duration: 0.9ms | Allocations: 499)
+  Rendered layout layouts/application.html.erb (Duration: 3.2ms | Allocations: 2942)
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.0ms | Allocations: 3274)
+
+
+Started GET "/users/find" for 127.0.0.1 at 2023-01-17 20:23:33 +0100
+Processing by UsersController#find as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  Rendered users/find.html.erb within layouts/application (Duration: 4.1ms | Allocations: 2190)
+  Rendered layout layouts/application.html.erb (Duration: 4.4ms | Allocations: 2262)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms | Allocations: 3251)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    3:   <%= submit_tag "Search" %>
+    4: <% end %>
+    5: 
+    6: <% @users.each do |article| %>
+    7:   <h2><%= article.title %></h2>
+    8:   <p><%= article.locate %></p>
+    9:   <p><%= article.description %></p>
+  
+app/views/users/find.html.erb:6
+Started GET "/users/find" for 127.0.0.1 at 2023-01-17 20:23:34 +0100
+Processing by UsersController#find as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  Rendered users/find.html.erb within layouts/application (Duration: 3.0ms | Allocations: 1859)
+  Rendered layout layouts/application.html.erb (Duration: 3.2ms | Allocations: 1930)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms | Allocations: 2230)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    3:   <%= submit_tag "Search" %>
+    4: <% end %>
+    5: 
+    6: <% @users.each do |article| %>
+    7:   <h2><%= article.title %></h2>
+    8:   <p><%= article.locate %></p>
+    9:   <p><%= article.description %></p>
+  
+app/views/users/find.html.erb:6
+Started GET "/users/find" for 127.0.0.1 at 2023-01-17 20:23:38 +0100
+Processing by UsersController#find as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  Rendered users/find.html.erb within layouts/application (Duration: 4.7ms | Allocations: 2160)
+  Rendered layout layouts/application.html.erb (Duration: 5.0ms | Allocations: 2232)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.0ms | Allocations: 3217)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    3:   <%= submit_tag "Search" %>
+    4: <% end %>
+    5: 
+    6: <% @user.each do |article| %>
+    7:   <h2><%= article.title %></h2>
+    8:   <p><%= article.locate %></p>
+    9:   <p><%= article.description %></p>
+  
+app/views/users/find.html.erb:6
+Started GET "/users/find" for 127.0.0.1 at 2023-01-17 20:23:41 +0100
+Processing by UsersController#find as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  Rendered users/find.html.erb within layouts/application (Duration: 4.5ms | Allocations: 2159)
+  Rendered layout layouts/application.html.erb (Duration: 4.8ms | Allocations: 2231)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms | Allocations: 3217)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    3:   <%= submit_tag "Search" %>
+    4: <% end %>
+    5: 
+    6: <% @users.each do |article| %>
+    7:   <h2><%= article.title %></h2>
+    8:   <p><%= article.locate %></p>
+    9:   <p><%= article.description %></p>
+  
+app/views/users/find.html.erb:6
+Started GET "/users/find" for 127.0.0.1 at 2023-01-17 20:23:48 +0100
+Processing by UsersController#find as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  Rendered users/find.html.erb within layouts/application (Duration: 4.9ms | Allocations: 2130)
+  Rendered layout layouts/application.html.erb (Duration: 5.2ms | Allocations: 2202)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms | Allocations: 3188)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    3:   <%= submit_tag "Search" %>
+    4: <% end %>
+    5: 
+    6: <% @users.each do |article| %>
+    7:   <p><%= article.locate %></p>
+    8: <% end %>
+  
+app/views/users/find.html.erb:6
+Started GET "/users/find" for 127.0.0.1 at 2023-01-17 20:23:49 +0100
+Processing by UsersController#find as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  Rendered users/find.html.erb within layouts/application (Duration: 3.4ms | Allocations: 1859)
+  Rendered layout layouts/application.html.erb (Duration: 3.7ms | Allocations: 1930)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms | Allocations: 2230)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    3:   <%= submit_tag "Search" %>
+    4: <% end %>
+    5: 
+    6: <% @users.each do |article| %>
+    7:   <p><%= article.locate %></p>
+    8: <% end %>
+  
+app/views/users/find.html.erb:6
+Started GET "/users/find" for 127.0.0.1 at 2023-01-17 20:23:49 +0100
+Processing by UsersController#find as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  Rendered users/find.html.erb within layouts/application (Duration: 1.0ms | Allocations: 1859)
+  Rendered layout layouts/application.html.erb (Duration: 1.3ms | Allocations: 2725)
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 4296)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    3:   <%= submit_tag "Search" %>
+    4: <% end %>
+    5: 
+    6: <% @users.each do |article| %>
+    7:   <p><%= article.locate %></p>
+    8: <% end %>
+  
+app/views/users/find.html.erb:6
+Started GET "/users/find" for 127.0.0.1 at 2023-01-17 20:24:19 +0100
+Processing by UsersController#find as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  Rendered users/find.html.erb within layouts/application (Duration: 5.1ms | Allocations: 2130)
+  Rendered layout layouts/application.html.erb (Duration: 5.4ms | Allocations: 2202)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.0ms | Allocations: 3187)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    3:   <%= submit_tag "Search" %>
+    4: <% end %>
+    5: 
+    6: <% @article.each do |article| %>
+    7:   <p><%= article.locate %></p>
+    8: <% end %>
+  
+app/views/users/find.html.erb:6
+Started GET "/users/find" for 127.0.0.1 at 2023-01-17 20:24:22 +0100
+Processing by UsersController#find as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  [1m[36mUser Load (17.8ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/find.html.erb:6
+  Rendered users/find.html.erb within layouts/application (Duration: 47.7ms | Allocations: 1311)
+  Rendered layout layouts/application.html.erb (Duration: 55.7ms | Allocations: 4078)
+Completed 200 OK in 61ms (Views: 41.8ms | ActiveRecord: 17.8ms | Allocations: 5097)
+
+
+Started POST "/users/find?method=get" for 127.0.0.1 at 2023-01-17 20:24:24 +0100
+  
+ActionController::RoutingError (No route matches [POST] "/users/find"):
+  
+Started GET "/users/find" for 127.0.0.1 at 2023-01-17 20:24:24 +0100
+Processing by UsersController#find as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  [1m[36mUser Load (16.0ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/find.html.erb:6
+  Rendered users/find.html.erb within layouts/application (Duration: 32.5ms | Allocations: 1055)
+  Rendered layout layouts/application.html.erb (Duration: 35.4ms | Allocations: 3498)
+Completed 200 OK in 36ms (Views: 19.7ms | ActiveRecord: 16.0ms | Allocations: 3832)
+
+
+Started POST "/users/find?method=get" for 127.0.0.1 at 2023-01-17 20:24:27 +0100
+  
+ActionController::RoutingError (No route matches [POST] "/users/find"):
+  
+Started GET "/users/find" for 127.0.0.1 at 2023-01-17 20:24:27 +0100
+Processing by UsersController#find as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  [1m[36mUser Load (21.4ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/find.html.erb:6
+  Rendered users/find.html.erb within layouts/application (Duration: 38.4ms | Allocations: 1047)
+  Rendered layout layouts/application.html.erb (Duration: 44.5ms | Allocations: 3501)
+Completed 200 OK in 45ms (Views: 23.4ms | ActiveRecord: 21.4ms | Allocations: 3834)
+
+
+Started GET "/users/find" for 127.0.0.1 at 2023-01-17 20:24:45 +0100
+Processing by UsersController#find as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  [1m[36mUser Load (17.2ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/find.html.erb:6
+  Rendered users/find.html.erb within layouts/application (Duration: 39.9ms | Allocations: 1363)
+  Rendered layout layouts/application.html.erb (Duration: 45.8ms | Allocations: 4114)
+Completed 200 OK in 52ms (Views: 32.0ms | ActiveRecord: 17.2ms | Allocations: 5132)
+
+
+Started POST "/users/find?method=get" for 127.0.0.1 at 2023-01-17 20:24:47 +0100
+  
+ActionController::RoutingError (No route matches [POST] "/users/find"):
+  
+Started GET "/users/find" for 127.0.0.1 at 2023-01-17 20:24:47 +0100
+Processing by UsersController#find as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  [1m[36mUser Load (16.2ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/find.html.erb:6
+  Rendered users/find.html.erb within layouts/application (Duration: 43.0ms | Allocations: 1039)
+  Rendered layout layouts/application.html.erb (Duration: 46.8ms | Allocations: 3482)
+Completed 200 OK in 48ms (Views: 31.0ms | ActiveRecord: 16.2ms | Allocations: 3815)
+
+
+Started POST "/users/find?method=get" for 127.0.0.1 at 2023-01-17 20:24:48 +0100
+  
+ActionController::RoutingError (No route matches [POST] "/users/find"):
+  
+Started GET "/users/find" for 127.0.0.1 at 2023-01-17 20:24:48 +0100
+Processing by UsersController#find as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  [1m[36mUser Load (16.9ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/find.html.erb:6
+  Rendered users/find.html.erb within layouts/application (Duration: 40.3ms | Allocations: 1044)
+  Rendered layout layouts/application.html.erb (Duration: 43.9ms | Allocations: 3487)
+Completed 200 OK in 45ms (Views: 27.4ms | ActiveRecord: 16.9ms | Allocations: 3819)
+
+
+Started POST "/users/find?method=get" for 127.0.0.1 at 2023-01-17 20:24:56 +0100
+  
+ActionController::RoutingError (No route matches [POST] "/users/find"):
+  
+Started GET "/users/find" for 127.0.0.1 at 2023-01-17 20:24:56 +0100
+Processing by UsersController#find as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  [1m[36mUser Load (18.4ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/find.html.erb:6
+  Rendered users/find.html.erb within layouts/application (Duration: 45.7ms | Allocations: 1371)
+  Rendered layout layouts/application.html.erb (Duration: 49.4ms | Allocations: 4119)
+Completed 200 OK in 51ms (Views: 32.3ms | ActiveRecord: 18.4ms | Allocations: 5092)
+
+
+Started POST "/users/find?method=get" for 127.0.0.1 at 2023-01-17 20:24:56 +0100
+  
+ActionController::RoutingError (No route matches [POST] "/users/find"):
+  
+Started GET "/users/find" for 127.0.0.1 at 2023-01-17 20:24:56 +0100
+Processing by UsersController#find as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  [1m[36mUser Load (15.1ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/find.html.erb:6
+  Rendered users/find.html.erb within layouts/application (Duration: 35.8ms | Allocations: 1047)
+  Rendered layout layouts/application.html.erb (Duration: 38.4ms | Allocations: 3504)
+Completed 200 OK in 39ms (Views: 23.6ms | ActiveRecord: 15.1ms | Allocations: 3837)
+
+
+Started GET "/users/find" for 127.0.0.1 at 2023-01-17 20:26:12 +0100
+Processing by UsersController#find as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  [1m[36mUser Load (17.2ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/find.html.erb:6
+  Rendered users/find.html.erb within layouts/application (Duration: 100.8ms | Allocations: 3874)
+  Rendered layout layouts/application.html.erb (Duration: 118.8ms | Allocations: 18341)
+Completed 200 OK in 122ms (Views: 39.4ms | ActiveRecord: 80.9ms | Allocations: 19949)
+
+
+Started GET "/users/find" for 127.0.0.1 at 2023-01-17 20:27:03 +0100
+Processing by UsersController#find as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  [1m[36mUser Load (18.4ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/find.html.erb:6
+  Rendered users/find.html.erb within layouts/application (Duration: 101.7ms | Allocations: 3553)
+  Rendered layout layouts/application.html.erb (Duration: 118.0ms | Allocations: 17804)
+Completed 200 OK in 120ms (Views: 38.0ms | ActiveRecord: 80.7ms | Allocations: 19121)
+
+
+Started POST "/users/find?method=get" for 127.0.0.1 at 2023-01-17 20:27:06 +0100
+  
+ActionController::RoutingError (No route matches [POST] "/users/find"):
+  
+Started GET "/users/find" for 127.0.0.1 at 2023-01-17 20:27:06 +0100
+Processing by UsersController#find as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  [1m[36mUser Load (18.5ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/find.html.erb:6
+  Rendered users/find.html.erb within layouts/application (Duration: 38.4ms | Allocations: 1039)
+  Rendered layout layouts/application.html.erb (Duration: 42.0ms | Allocations: 3482)
+Completed 200 OK in 43ms (Views: 23.9ms | ActiveRecord: 18.5ms | Allocations: 3814)
+
+
+Started POST "/users/find?method=get" for 127.0.0.1 at 2023-01-17 20:27:09 +0100
+  
+ActionController::RoutingError (No route matches [POST] "/users/find"):
+  
+Started GET "/users/find" for 127.0.0.1 at 2023-01-17 20:27:09 +0100
+Processing by UsersController#find as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  [1m[36mUser Load (16.4ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/find.html.erb:6
+  Rendered users/find.html.erb within layouts/application (Duration: 40.3ms | Allocations: 1041)
+  Rendered layout layouts/application.html.erb (Duration: 43.7ms | Allocations: 3484)
+Completed 200 OK in 45ms (Views: 27.7ms | ActiveRecord: 16.4ms | Allocations: 3816)
+
+
+Started GET "/users/find" for 127.0.0.1 at 2023-01-17 20:27:20 +0100
+Processing by UsersController#find as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  [1m[36mUser Load (17.8ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/find.html.erb:6
+  Rendered users/find.html.erb within layouts/application (Duration: 97.3ms | Allocations: 3545)
+  Rendered layout layouts/application.html.erb (Duration: 116.1ms | Allocations: 17697)
+Completed 200 OK in 118ms (Views: 43.8ms | ActiveRecord: 73.1ms | Allocations: 19012)
+
+
+Started POST "/users/find?method=get" for 127.0.0.1 at 2023-01-17 20:27:22 +0100
+  
+ActionController::RoutingError (No route matches [POST] "/users/find"):
+  
+Started GET "/users/find" for 127.0.0.1 at 2023-01-17 20:27:22 +0100
+Processing by UsersController#find as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  [1m[36mUser Load (18.8ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/find.html.erb:6
+  Rendered users/find.html.erb within layouts/application (Duration: 38.3ms | Allocations: 1057)
+  Rendered layout layouts/application.html.erb (Duration: 41.6ms | Allocations: 3514)
+Completed 200 OK in 43ms (Views: 23.3ms | ActiveRecord: 18.8ms | Allocations: 3846)
+
+
+Started POST "/users/find?method=get" for 127.0.0.1 at 2023-01-17 20:27:25 +0100
+  
+ActionController::RoutingError (No route matches [POST] "/users/find"):
+  
+Started GET "/users/find" for 127.0.0.1 at 2023-01-17 20:27:25 +0100
+Processing by UsersController#find as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  [1m[36mUser Load (18.9ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/find.html.erb:6
+  Rendered users/find.html.erb within layouts/application (Duration: 44.0ms | Allocations: 1041)
+  Rendered layout layouts/application.html.erb (Duration: 47.2ms | Allocations: 3503)
+Completed 200 OK in 48ms (Views: 28.6ms | ActiveRecord: 18.9ms | Allocations: 3835)
+
+
+Started GET "/users/find" for 127.0.0.1 at 2023-01-17 20:30:55 +0100
+  
+SyntaxError (/Applications/MAMP/htdocs/Ruby/Projet/cleanUp/app/controllers/users_controller.rb:22: syntax error, unexpected '='
+        if f.locate !== ""
+                      ^
+/Applications/MAMP/htdocs/Ruby/Projet/cleanUp/app/controllers/users_controller.rb:26: else without rescue is useless
+    else
+    ^~~~
+/Applications/MAMP/htdocs/Ruby/Projet/cleanUp/app/controllers/users_controller.rb:41: syntax error, unexpected `end', expecting end-of-input):
+  
+app/controllers/users_controller.rb:22: syntax error, unexpected '='
+app/controllers/users_controller.rb:26: else without rescue is useless
+app/controllers/users_controller.rb:41: syntax error, unexpected `end', expecting end-of-input
+app/controllers/users_controller.rb:22: syntax error, unexpected '='
+app/controllers/users_controller.rb:26: else without rescue is useless
+app/controllers/users_controller.rb:41: syntax error, unexpected `end', expecting end-of-input
+app/controllers/users_controller.rb:22: syntax error, unexpected '='
+app/controllers/users_controller.rb:26: else without rescue is useless
+app/controllers/users_controller.rb:41: syntax error, unexpected `end', expecting end-of-input
+Started GET "/users/index" for 127.0.0.1 at 2023-01-17 20:31:17 +0100
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (17.3ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:21
+  Rendered users/index.html.erb within layouts/application (Duration: 125.8ms | Allocations: 4966)
+  Rendered layout layouts/application.html.erb (Duration: 132.4ms | Allocations: 19125)
+Completed 200 OK in 134ms (Views: 36.0ms | ActiveRecord: 97.0ms | Allocations: 20487)
+
+
+Started GET "/users/find" for 127.0.0.1 at 2023-01-17 20:31:19 +0100
+Processing by UsersController#find as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  [1m[36mUser Load (18.8ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/find.html.erb:6
+  Rendered users/find.html.erb within layouts/application (Duration: 45.7ms | Allocations: 1506)
+  Rendered layout layouts/application.html.erb (Duration: 59.7ms | Allocations: 3958)
+Completed 200 OK in 62ms (Views: 41.7ms | ActiveRecord: 18.8ms | Allocations: 4291)
+
+
+Started POST "/users/find?method=get" for 127.0.0.1 at 2023-01-17 20:31:24 +0100
+  
+ActionController::RoutingError (No route matches [POST] "/users/find"):
+  
+Started GET "/users/find" for 127.0.0.1 at 2023-01-17 20:31:24 +0100
+Processing by UsersController#find as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  [1m[36mUser Load (18.5ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/find.html.erb:6
+  Rendered users/find.html.erb within layouts/application (Duration: 35.2ms | Allocations: 1051)
+  Rendered layout layouts/application.html.erb (Duration: 38.4ms | Allocations: 3513)
+Completed 200 OK in 39ms (Views: 20.3ms | ActiveRecord: 18.5ms | Allocations: 3845)
+
+
+Started POST "/users/find?method=get" for 127.0.0.1 at 2023-01-17 20:31:24 +0100
+  
+ActionController::RoutingError (No route matches [POST] "/users/find"):
+  
+Started GET "/users/find" for 127.0.0.1 at 2023-01-17 20:31:24 +0100
+Processing by UsersController#find as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  [1m[36mUser Load (18.7ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/find.html.erb:6
+  Rendered users/find.html.erb within layouts/application (Duration: 35.4ms | Allocations: 1047)
+  Rendered layout layouts/application.html.erb (Duration: 38.5ms | Allocations: 3490)
+Completed 200 OK in 39ms (Views: 20.1ms | ActiveRecord: 18.7ms | Allocations: 3822)
+
+
+Started GET "/users/find" for 127.0.0.1 at 2023-01-17 20:31:52 +0100
+Processing by UsersController#find as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  [1m[36mUser Load (19.6ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/find.html.erb:6
+  Rendered users/find.html.erb within layouts/application (Duration: 42.0ms | Allocations: 1318)
+  Rendered layout layouts/application.html.erb (Duration: 48.4ms | Allocations: 4066)
+Completed 200 OK in 53ms (Views: 31.3ms | ActiveRecord: 19.6ms | Allocations: 5084)
+
+
+Started POST "/users/find?method=get" for 127.0.0.1 at 2023-01-17 20:31:54 +0100
+  
+ActionController::RoutingError (No route matches [POST] "/users/find"):
+  
+Started GET "/users/find" for 127.0.0.1 at 2023-01-17 20:31:54 +0100
+Processing by UsersController#find as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  [1m[36mUser Load (16.5ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/find.html.erb:6
+  Rendered users/find.html.erb within layouts/application (Duration: 35.0ms | Allocations: 1049)
+  Rendered layout layouts/application.html.erb (Duration: 37.9ms | Allocations: 3492)
+Completed 200 OK in 39ms (Views: 21.7ms | ActiveRecord: 16.5ms | Allocations: 3825)
+
+
+Started GET "/users/find" for 127.0.0.1 at 2023-01-17 20:32:00 +0100
+Processing by UsersController#find as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  [1m[36mUser Load (18.5ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/find.html.erb:1
+  Rendered users/find.html.erb within layouts/application (Duration: 36.7ms | Allocations: 707)
+  Rendered layout layouts/application.html.erb (Duration: 42.4ms | Allocations: 3633)
+Completed 200 OK in 47ms (Views: 27.0ms | ActiveRecord: 18.5ms | Allocations: 4651)
+
+
+Started GET "/users/find" for 127.0.0.1 at 2023-01-17 20:32:05 +0100
+Processing by UsersController#find as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  [1m[36mUser Load (17.7ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/find.html.erb:1
+  Rendered users/find.html.erb within layouts/application (Duration: 45.4ms | Allocations: 711)
+  Rendered layout layouts/application.html.erb (Duration: 52.8ms | Allocations: 3634)
+Completed 200 OK in 58ms (Views: 37.9ms | ActiveRecord: 17.7ms | Allocations: 4653)
+
+
+Started GET "/users/find" for 127.0.0.1 at 2023-01-17 20:32:19 +0100
+Processing by UsersController#find as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  [1m[36mUser Load (18.8ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/find.html.erb:6
+  Rendered users/find.html.erb within layouts/application (Duration: 99.1ms | Allocations: 3853)
+  Rendered layout layouts/application.html.erb (Duration: 114.4ms | Allocations: 18327)
+Completed 200 OK in 118ms (Views: 37.8ms | ActiveRecord: 78.0ms | Allocations: 19935)
+
+
+Started POST "/users/find?method=get" for 127.0.0.1 at 2023-01-17 20:32:22 +0100
+  
+ActionController::RoutingError (No route matches [POST] "/users/find"):
+  
+Started GET "/users/find" for 127.0.0.1 at 2023-01-17 20:32:23 +0100
+Processing by UsersController#find as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  [1m[36mUser Load (18.5ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/find.html.erb:6
+  Rendered users/find.html.erb within layouts/application (Duration: 37.9ms | Allocations: 1045)
+  Rendered layout layouts/application.html.erb (Duration: 40.8ms | Allocations: 3507)
+Completed 200 OK in 42ms (Views: 22.7ms | ActiveRecord: 18.5ms | Allocations: 3839)
+
+
+Started POST "/users/find?method=get" for 127.0.0.1 at 2023-01-17 20:32:23 +0100
+  
+ActionController::RoutingError (No route matches [POST] "/users/find"):
+  
+Started GET "/users/find" for 127.0.0.1 at 2023-01-17 20:32:23 +0100
+Processing by UsersController#find as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  [1m[36mUser Load (18.2ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/find.html.erb:6
+  Rendered users/find.html.erb within layouts/application (Duration: 37.7ms | Allocations: 1043)
+  Rendered layout layouts/application.html.erb (Duration: 41.1ms | Allocations: 3505)
+Completed 200 OK in 42ms (Views: 23.3ms | ActiveRecord: 18.2ms | Allocations: 3837)
+
+
+Started POST "/users/find?method=get" for 127.0.0.1 at 2023-01-17 20:32:27 +0100
+  
+ActionController::RoutingError (No route matches [POST] "/users/find"):
+  
+Started GET "/users/find" for 127.0.0.1 at 2023-01-17 20:32:27 +0100
+Processing by UsersController#find as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  [1m[36mUser Load (87.8ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/find.html.erb:6
+  Rendered users/find.html.erb within layouts/application (Duration: 184.1ms | Allocations: 1039)
+  Rendered layout layouts/application.html.erb (Duration: 190.7ms | Allocations: 3482)
+Completed 200 OK in 192ms (Views: 103.6ms | ActiveRecord: 87.8ms | Allocations: 3815)
+
+
+Started POST "/users/find?method=get" for 127.0.0.1 at 2023-01-17 20:32:28 +0100
+  
+ActionController::RoutingError (No route matches [POST] "/users/find"):
+  
+Started GET "/users/find" for 127.0.0.1 at 2023-01-17 20:32:28 +0100
+Processing by UsersController#find as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  [1m[36mUser Load (65.5ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/find.html.erb:6
+  Rendered users/find.html.erb within layouts/application (Duration: 130.2ms | Allocations: 1041)
+  Rendered layout layouts/application.html.erb (Duration: 136.5ms | Allocations: 3489)
+Completed 200 OK in 138ms (Views: 71.5ms | ActiveRecord: 65.5ms | Allocations: 3821)
+
+
+Started GET "/users/find" for 127.0.0.1 at 2023-01-17 20:34:46 +0100
+Processing by UsersController#find as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  Rendered users/find.html.erb within layouts/application (Duration: 3.2ms | Allocations: 2138)
+  Rendered layout layouts/application.html.erb (Duration: 3.4ms | Allocations: 2210)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms | Allocations: 3200)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    3:   <%= submit_tag "Search" %>
+    4: <% end %>
+    5: 
+    6: <% @use.each do |article| %>
+    7:   <p><%= article.locate %></p>
+    8: <% end %>
+  
+app/views/users/find.html.erb:6
+Started GET "/users/find" for 127.0.0.1 at 2023-01-17 20:34:49 +0100
+Processing by UsersController#find as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  [1m[36mUser Load (16.6ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/find.html.erb:6
+  Rendered users/find.html.erb within layouts/application (Duration: 48.5ms | Allocations: 1317)
+  Rendered layout layouts/application.html.erb (Duration: 59.3ms | Allocations: 4084)
+Completed 200 OK in 66ms (Views: 46.8ms | ActiveRecord: 16.6ms | Allocations: 5103)
+
+
+Started GET "/users/find" for 127.0.0.1 at 2023-01-17 20:35:06 +0100
+Processing by UsersController#find as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  [1m[36mUser Load (16.8ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/find.html.erb:6
+  Rendered users/find.html.erb within layouts/application (Duration: 36.6ms | Allocations: 994)
+  Rendered layout layouts/application.html.erb (Duration: 43.3ms | Allocations: 3920)
+Completed 200 OK in 49ms (Views: 29.7ms | ActiveRecord: 16.8ms | Allocations: 4939)
+
+
+Started GET "/users?search=name&commit=Search" for 127.0.0.1 at 2023-01-17 20:35:09 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/users"):
+  
+Started GET "/users/find" for 127.0.0.1 at 2023-01-17 20:35:09 +0100
+Processing by UsersController#find as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  [1m[36mUser Load (17.7ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/find.html.erb:6
+  Rendered users/find.html.erb within layouts/application (Duration: 46.3ms | Allocations: 726)
+  Rendered layout layouts/application.html.erb (Duration: 50.1ms | Allocations: 3368)
+Completed 200 OK in 51ms (Views: 32.9ms | ActiveRecord: 17.7ms | Allocations: 3701)
+
+
+Started GET "/users?search=matis&commit=Search" for 127.0.0.1 at 2023-01-17 20:35:10 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/users"):
+  
+Started GET "/users/find" for 127.0.0.1 at 2023-01-17 20:35:11 +0100
+Processing by UsersController#find as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  [1m[36mUser Load (15.9ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/find.html.erb:6
+  Rendered users/find.html.erb within layouts/application (Duration: 41.3ms | Allocations: 726)
+  Rendered layout layouts/application.html.erb (Duration: 45.1ms | Allocations: 3349)
+Completed 200 OK in 46ms (Views: 29.5ms | ActiveRecord: 15.9ms | Allocations: 3681)
+
+
+Started GET "/users/find" for 127.0.0.1 at 2023-01-17 20:35:15 +0100
+Processing by UsersController#find as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  Rendered users/find.html.erb within layouts/application (Duration: 17.8ms | Allocations: 4441)
+  Rendered layout layouts/application.html.erb (Duration: 18.1ms | Allocations: 4513)
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 0.0ms | Allocations: 5498)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `user_path' for #<ActionView::Base:0x0000000002c448>
+Did you mean?  users_path):
+    1: <%= form_tag(user_path, method: :get) do %>
+    2:   <%= text_field_tag :search, params[:search] %>
+    3:   <%= submit_tag "Search" %>
+    4: <% end %>
+  
+app/views/users/find.html.erb:1
+Started GET "/users/find" for 127.0.0.1 at 2023-01-17 20:35:16 +0100
+Processing by UsersController#find as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  [1m[36mUser Load (42.3ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/find.html.erb:6
+  Rendered users/find.html.erb within layouts/application (Duration: 73.8ms | Allocations: 987)
+  Rendered layout layouts/application.html.erb (Duration: 81.9ms | Allocations: 3928)
+Completed 200 OK in 86ms (Views: 42.2ms | ActiveRecord: 42.3ms | Allocations: 4947)
+
+
+Started GET "/users/find" for 127.0.0.1 at 2023-01-17 20:36:18 +0100
+Processing by UsersController#find as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  [1m[36mUser Load (16.6ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/find.html.erb:6
+  Rendered users/find.html.erb within layouts/application (Duration: 90.7ms | Allocations: 2861)
+  Rendered layout layouts/application.html.erb (Duration: 107.3ms | Allocations: 17262)
+Completed 200 OK in 109ms (Views: 37.4ms | ActiveRecord: 70.6ms | Allocations: 18578)
+
+
+Started GET "/users?search=matis&commit=Search" for 127.0.0.1 at 2023-01-17 20:36:20 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/users"):
+  
+Started GET "/users/find" for 127.0.0.1 at 2023-01-17 20:36:20 +0100
+Processing by UsersController#find as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  [1m[36mUser Load (17.4ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/find.html.erb:6
+  Rendered users/find.html.erb within layouts/application (Duration: 41.3ms | Allocations: 726)
+  Rendered layout layouts/application.html.erb (Duration: 44.4ms | Allocations: 3335)
+Completed 200 OK in 46ms (Views: 27.4ms | ActiveRecord: 17.4ms | Allocations: 3667)
+
+
+Started GET "/users?search=m&commit=Search" for 127.0.0.1 at 2023-01-17 20:36:23 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/users"):
+  
+Started GET "/users/find" for 127.0.0.1 at 2023-01-17 20:36:23 +0100
+Processing by UsersController#find as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  [1m[36mUser Load (18.6ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/find.html.erb:6
+  Rendered users/find.html.erb within layouts/application (Duration: 42.7ms | Allocations: 726)
+  Rendered layout layouts/application.html.erb (Duration: 45.9ms | Allocations: 3350)
+Completed 200 OK in 47ms (Views: 27.6ms | ActiveRecord: 18.6ms | Allocations: 3683)
+
+
+Started GET "/users/find" for 127.0.0.1 at 2023-01-17 20:36:41 +0100
+Processing by UsersController#find as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  [1m[36mUser Load (20.1ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/find.html.erb:6
+  Rendered users/find.html.erb within layouts/application (Duration: 40.0ms | Allocations: 994)
+  Rendered layout layouts/application.html.erb (Duration: 49.3ms | Allocations: 3914)
+Completed 200 OK in 53ms (Views: 31.8ms | ActiveRecord: 20.1ms | Allocations: 4932)
+
+
+Started GET "/users?search=matis&commit=Search" for 127.0.0.1 at 2023-01-17 20:36:44 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/users"):
+  
+Started GET "/users/find" for 127.0.0.1 at 2023-01-17 20:36:45 +0100
+Processing by UsersController#find as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  [1m[36mUser Load (18.1ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/find.html.erb:6
+  Rendered users/find.html.erb within layouts/application (Duration: 35.4ms | Allocations: 730)
+  Rendered layout layouts/application.html.erb (Duration: 38.8ms | Allocations: 3366)
+Completed 200 OK in 40ms (Views: 21.1ms | ActiveRecord: 18.1ms | Allocations: 3699)
+
+
+Started GET "/users?search=&commit=Search" for 127.0.0.1 at 2023-01-17 20:36:45 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/users"):
+  
+Started GET "/users/find" for 127.0.0.1 at 2023-01-17 20:36:45 +0100
+Processing by UsersController#find as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  [1m[36mUser Load (22.0ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/find.html.erb:6
+  Rendered users/find.html.erb within layouts/application (Duration: 46.4ms | Allocations: 730)
+  Rendered layout layouts/application.html.erb (Duration: 50.5ms | Allocations: 3349)
+Completed 200 OK in 51ms (Views: 28.8ms | ActiveRecord: 22.0ms | Allocations: 3681)
+
+
+Started GET "/users?search=matis&commit=Search" for 127.0.0.1 at 2023-01-17 20:36:48 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/users"):
+  
+Started GET "/users/find" for 127.0.0.1 at 2023-01-17 20:36:48 +0100
+Processing by UsersController#find as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  [1m[36mUser Load (17.1ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/find.html.erb:6
+  Rendered users/find.html.erb within layouts/application (Duration: 37.5ms | Allocations: 730)
+  Rendered layout layouts/application.html.erb (Duration: 39.2ms | Allocations: 3341)
+Completed 200 OK in 40ms (Views: 22.5ms | ActiveRecord: 17.1ms | Allocations: 3673)
+
+
+Started GET "/users?search=locate&commit=Search" for 127.0.0.1 at 2023-01-17 20:37:39 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/users"):
+  
+Started GET "/users/find" for 127.0.0.1 at 2023-01-17 20:37:39 +0100
+Processing by UsersController#find as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  [1m[36mUser Load (17.9ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/find.html.erb:6
+  Rendered users/find.html.erb within layouts/application (Duration: 66.7ms | Allocations: 991)
+  Rendered layout layouts/application.html.erb (Duration: 71.5ms | Allocations: 3934)
+Completed 200 OK in 74ms (Views: 54.9ms | ActiveRecord: 17.9ms | Allocations: 4906)
+
+
+Started GET "/users?search=&commit=Search" for 127.0.0.1 at 2023-01-17 20:37:39 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/users"):
+  
+Started GET "/users/find" for 127.0.0.1 at 2023-01-17 20:37:40 +0100
+Processing by UsersController#find as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  [1m[36mUser Load (19.3ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/find.html.erb:6
+  Rendered users/find.html.erb within layouts/application (Duration: 44.0ms | Allocations: 730)
+  Rendered layout layouts/application.html.erb (Duration: 48.4ms | Allocations: 3368)
+Completed 200 OK in 49ms (Views: 29.4ms | ActiveRecord: 19.3ms | Allocations: 3701)
+
+
+Started GET "/users?search=locate&commit=Search" for 127.0.0.1 at 2023-01-17 20:37:42 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/users"):
+  
+Started GET "/users/find" for 127.0.0.1 at 2023-01-17 20:37:42 +0100
+Processing by UsersController#find as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  [1m[36mUser Load (17.7ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/find.html.erb:6
+  Rendered users/find.html.erb within layouts/application (Duration: 44.3ms | Allocations: 730)
+  Rendered layout layouts/application.html.erb (Duration: 47.7ms | Allocations: 3333)
+Completed 200 OK in 49ms (Views: 30.3ms | ActiveRecord: 17.7ms | Allocations: 3665)
+
+
+Started GET "/users?search=ezfkz&commit=Search" for 127.0.0.1 at 2023-01-17 20:40:30 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/users"):
+  
+Started GET "/users/find" for 127.0.0.1 at 2023-01-17 20:40:30 +0100
+Processing by UsersController#find as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  [1m[36mUser Load (17.6ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/find.html.erb:6
+  Rendered users/find.html.erb within layouts/application (Duration: 33.6ms | Allocations: 730)
+  Rendered layout layouts/application.html.erb (Duration: 36.6ms | Allocations: 3339)
+Completed 200 OK in 38ms (Views: 19.6ms | ActiveRecord: 17.6ms | Allocations: 3671)
+
+
+Started GET "/users?search=m&commit=Search" for 127.0.0.1 at 2023-01-17 20:43:34 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/users"):
+  
+Started GET "/users/find" for 127.0.0.1 at 2023-01-17 20:43:35 +0100
+Processing by UsersController#find as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  [1m[36mUser Load (19.4ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/find.html.erb:6
+  Rendered users/find.html.erb within layouts/application (Duration: 102.1ms | Allocations: 2863)
+  Rendered layout layouts/application.html.erb (Duration: 109.2ms | Allocations: 17279)
+Completed 200 OK in 111ms (Views: 28.0ms | ActiveRecord: 81.7ms | Allocations: 18597)
+
+
+Started GET "/users/find" for 127.0.0.1 at 2023-01-17 20:45:00 +0100
+  
+SyntaxError (/Applications/MAMP/htdocs/Ruby/Projet/cleanUp/app/controllers/users_controller.rb:33: syntax error, unexpected end-of-input, expecting `end'):
+  
+app/controllers/users_controller.rb:33: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/users_controller.rb:33: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/users_controller.rb:33: syntax error, unexpected end-of-input, expecting `end'
+Started GET "/users/find" for 127.0.0.1 at 2023-01-17 20:45:10 +0100
+Processing by UsersController#find as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  Rendered users/find.html.erb within layouts/application (Duration: 1.9ms | Allocations: 1581)
+  Rendered layout layouts/application.html.erb (Duration: 2.0ms | Allocations: 1653)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 2374)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    3:   <%= submit_tag "Search" %>
+    4: <% end %>
+    5: 
+    6: <% @user.each do |article| %>
+    7:   <p><%= article.name %></p>
+    8: <% end %>
+  
+app/views/users/find.html.erb:6
+Started GET "/users/find" for 127.0.0.1 at 2023-01-17 20:45:11 +0100
+Processing by UsersController#find as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  Rendered users/find.html.erb within layouts/application (Duration: 1.9ms | Allocations: 1546)
+  Rendered layout layouts/application.html.erb (Duration: 2.1ms | Allocations: 1617)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 1906)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    3:   <%= submit_tag "Search" %>
+    4: <% end %>
+    5: 
+    6: <% @user.each do |article| %>
+    7:   <p><%= article.name %></p>
+    8: <% end %>
+  
+app/views/users/find.html.erb:6
+Started GET "/users/find" for 127.0.0.1 at 2023-01-17 20:45:24 +0100
+Processing by UsersController#find as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  Rendered users/find.html.erb within layouts/application (Duration: 2.6ms | Allocations: 1807)
+  Rendered layout layouts/application.html.erb (Duration: 2.9ms | Allocations: 1879)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms | Allocations: 2854)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    3:   <%= submit_tag "Search" %>
+    4: <% end %>
+    5: 
+    6: <% @user.each do |article| %>
+    7:   <p><%= article.name %></p>
+    8: <% end %>   
+  
+app/views/users/find.html.erb:6
+Started GET "/users/find" for 127.0.0.1 at 2023-01-17 20:45:24 +0100
+Processing by UsersController#find as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  Rendered users/find.html.erb within layouts/application (Duration: 2.6ms | Allocations: 1546)
+  Rendered layout layouts/application.html.erb (Duration: 2.9ms | Allocations: 1617)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms | Allocations: 1907)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    3:   <%= submit_tag "Search" %>
+    4: <% end %>
+    5: 
+    6: <% @user.each do |article| %>
+    7:   <p><%= article.name %></p>
+    8: <% end %>   
+  
+app/views/users/find.html.erb:6
+Started GET "/users/find" for 127.0.0.1 at 2023-01-17 20:45:24 +0100
+Processing by UsersController#find as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  Rendered users/find.html.erb within layouts/application (Duration: 0.8ms | Allocations: 1546)
+  Rendered layout layouts/application.html.erb (Duration: 0.9ms | Allocations: 1797)
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 2420)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    3:   <%= submit_tag "Search" %>
+    4: <% end %>
+    5: 
+    6: <% @user.each do |article| %>
+    7:   <p><%= article.name %></p>
+    8: <% end %>   
+  
+app/views/users/find.html.erb:6
+Started GET "/users/find" for 127.0.0.1 at 2023-01-17 20:45:25 +0100
+Processing by UsersController#find as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  Rendered users/find.html.erb within layouts/application (Duration: 0.8ms | Allocations: 1546)
+  Rendered layout layouts/application.html.erb (Duration: 0.9ms | Allocations: 1617)
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 1906)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    3:   <%= submit_tag "Search" %>
+    4: <% end %>
+    5: 
+    6: <% @user.each do |article| %>
+    7:   <p><%= article.name %></p>
+    8: <% end %>   
+  
+app/views/users/find.html.erb:6
+Started GET "/users/find" for 127.0.0.1 at 2023-01-17 20:45:30 +0100
+Processing by UsersController#find as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  Rendered users/find.html.erb within layouts/application (Duration: 3.8ms | Allocations: 1807)
+  Rendered layout layouts/application.html.erb (Duration: 4.2ms | Allocations: 1879)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms | Allocations: 2855)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    3:   <%= submit_tag "Search" %>
+    4: <% end %>
+    5: 
+    6: <% @users.each do |article| %>
+    7:   <p><%= article.name %></p>
+    8: <% end %>   
+  
+app/views/users/find.html.erb:6
+Started GET "/users/index" for 127.0.0.1 at 2023-01-17 20:46:08 +0100
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (17.8ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:21
+  Rendered users/index.html.erb within layouts/application (Duration: 102.3ms | Allocations: 4971)
+  Rendered layout layouts/application.html.erb (Duration: 111.4ms | Allocations: 19377)
+Completed 200 OK in 115ms (Views: 32.7ms | ActiveRecord: 80.0ms | Allocations: 20974)
+
+
+Started GET "/users/find" for 127.0.0.1 at 2023-01-17 20:46:10 +0100
+Processing by UsersController#find as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  [1m[36mUser Load (107.7ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/find.html.erb:6
+  Rendered users/find.html.erb within layouts/application (Duration: 230.5ms | Allocations: 985)
+  Rendered layout layouts/application.html.erb (Duration: 244.9ms | Allocations: 3627)
+Completed 200 OK in 248ms (Views: 138.3ms | ActiveRecord: 107.7ms | Allocations: 4016)
+
+
+Started GET "/users?search=ma&commit=Search" for 127.0.0.1 at 2023-01-17 20:46:15 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/users"):
+  
+Started GET "/users/find" for 127.0.0.1 at 2023-01-17 20:46:15 +0100
+Processing by UsersController#find as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  [1m[36mUser Load (17.3ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/find.html.erb:6
+  Rendered users/find.html.erb within layouts/application (Duration: 34.6ms | Allocations: 730)
+  Rendered layout layouts/application.html.erb (Duration: 38.7ms | Allocations: 3333)
+Completed 200 OK in 40ms (Views: 21.7ms | ActiveRecord: 17.3ms | Allocations: 3665)
+
+
+Started GET "/users?search=&commit=Search" for 127.0.0.1 at 2023-01-17 20:46:15 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/users"):
+  
+Started GET "/users/find" for 127.0.0.1 at 2023-01-17 20:46:16 +0100
+Processing by UsersController#find as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  [1m[36mUser Load (19.5ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/find.html.erb:6
+  Rendered users/find.html.erb within layouts/application (Duration: 41.2ms | Allocations: 730)
+  Rendered layout layouts/application.html.erb (Duration: 44.9ms | Allocations: 3335)
+Completed 200 OK in 46ms (Views: 25.7ms | ActiveRecord: 19.5ms | Allocations: 3667)
+
+
+Started GET "/users?search=ma&commit=Search" for 127.0.0.1 at 2023-01-17 20:46:19 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/users"):
+  
+Started GET "/users/find" for 127.0.0.1 at 2023-01-17 20:46:19 +0100
+Processing by UsersController#find as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  [1m[36mUser Load (18.0ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/find.html.erb:6
+  Rendered users/find.html.erb within layouts/application (Duration: 41.3ms | Allocations: 730)
+  Rendered layout layouts/application.html.erb (Duration: 44.5ms | Allocations: 3340)
+Completed 200 OK in 45ms (Views: 26.8ms | ActiveRecord: 18.0ms | Allocations: 3672)
+
+
+Started GET "/users?search=ma&commit=Search" for 127.0.0.1 at 2023-01-17 20:46:30 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/users"):
+  
+Started GET "/users/find" for 127.0.0.1 at 2023-01-17 20:46:30 +0100
+Processing by UsersController#find as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  [1m[36mUser Load (18.7ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/find.html.erb:6
+  Rendered users/find.html.erb within layouts/application (Duration: 42.2ms | Allocations: 730)
+  Rendered layout layouts/application.html.erb (Duration: 44.1ms | Allocations: 3358)
+Completed 200 OK in 45ms (Views: 25.8ms | ActiveRecord: 18.7ms | Allocations: 3691)
+
+
+Started GET "/users?search=m&commit=Search" for 127.0.0.1 at 2023-01-17 20:46:46 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/users"):
+  
+Started GET "/users/find" for 127.0.0.1 at 2023-01-17 20:46:46 +0100
+Processing by UsersController#find as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  [1m[36mUser Load (23.1ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/find.html.erb:6
+  Rendered users/find.html.erb within layouts/application (Duration: 41.9ms | Allocations: 730)
+  Rendered layout layouts/application.html.erb (Duration: 45.7ms | Allocations: 3335)
+Completed 200 OK in 47ms (Views: 23.0ms | ActiveRecord: 23.1ms | Allocations: 3667)
+
+
+Started GET "/users?search=Ma&commit=Search" for 127.0.0.1 at 2023-01-17 20:46:48 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/users"):
+  
+Started GET "/users/find" for 127.0.0.1 at 2023-01-17 20:46:48 +0100
+Processing by UsersController#find as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  [1m[36mUser Load (16.9ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/find.html.erb:6
+  Rendered users/find.html.erb within layouts/application (Duration: 53.7ms | Allocations: 730)
+  Rendered layout layouts/application.html.erb (Duration: 58.1ms | Allocations: 3347)
+Completed 200 OK in 59ms (Views: 41.5ms | ActiveRecord: 16.9ms | Allocations: 3680)
+
+
+Started GET "/users/find" for 127.0.0.1 at 2023-01-17 20:48:23 +0100
+Processing by UsersController#find as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  Rendered users/find.html.erb within layouts/application (Duration: 16.6ms | Allocations: 4369)
+  Rendered layout layouts/application.html.erb (Duration: 16.9ms | Allocations: 4441)
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 0.0ms | Allocations: 5431)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `find_path' for #<ActionView::Base:0x000000000442f0>
+Did you mean?  font_path):
+    1: <%= form_tag(find_path, method: :get) do %>
+    2:   <%= text_field_tag :search, params[:search] %>
+    3:   <%= submit_tag "Search" %>
+    4: <% end %>
+  
+app/views/users/find.html.erb:1
+Started GET "/users/find" for 127.0.0.1 at 2023-01-17 20:48:40 +0100
+Processing by UsersController#find as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  Rendered users/find.html.erb within layouts/application (Duration: 25.0ms | Allocations: 4477)
+  Rendered layout layouts/application.html.erb (Duration: 25.3ms | Allocations: 4549)
+Completed 500 Internal Server Error in 31ms (ActiveRecord: 0.0ms | Allocations: 5535)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `user_find_path' for #<ActionView::Base:0x000000000445e8>
+Did you mean?  users_find_path
+               users_index_path):
+    1: <%= form_tag(user_find_path, method: :get) do %>
+    2:   <%= text_field_tag :search, params[:search] %>
+    3:   <%= submit_tag "Search" %>
+    4: <% end %>
+  
+app/views/users/find.html.erb:1
+Started GET "/users/find" for 127.0.0.1 at 2023-01-17 20:48:46 +0100
+Processing by UsersController#find as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  [1m[36mUser Load (21.5ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/find.html.erb:6
+  Rendered users/find.html.erb within layouts/application (Duration: 46.8ms | Allocations: 992)
+  Rendered layout layouts/application.html.erb (Duration: 51.1ms | Allocations: 3921)
+Completed 200 OK in 55ms (Views: 31.7ms | ActiveRecord: 21.5ms | Allocations: 4941)
+
+
+Started GET "/users/find?search=m&commit=Search" for 127.0.0.1 at 2023-01-17 20:48:48 +0100
+Processing by UsersController#find as HTML
+  Parameters: {"search"=>"m", "commit"=>"Search"}
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  [1m[36mUser Load (18.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE (name LIKE '%m%')[0m
+  ↳ app/views/users/find.html.erb:6
+  Rendered users/find.html.erb within layouts/application (Duration: 21.1ms | Allocations: 761)
+  Rendered layout layouts/application.html.erb (Duration: 32.2ms | Allocations: 3384)
+Completed 200 OK in 60ms (Views: 14.9ms | ActiveRecord: 18.4ms | Allocations: 3782)
+
+
+Started GET "/users/find?search=m&commit=Search" for 127.0.0.1 at 2023-01-17 20:48:49 +0100
+Processing by UsersController#find as HTML
+  Parameters: {"search"=>"m", "commit"=>"Search"}
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  [1m[36mUser Load (17.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE (name LIKE '%m%')[0m
+  ↳ app/views/users/find.html.erb:6
+  Rendered users/find.html.erb within layouts/application (Duration: 18.7ms | Allocations: 743)
+  Rendered layout layouts/application.html.erb (Duration: 23.7ms | Allocations: 3352)
+Completed 200 OK in 48ms (Views: 6.9ms | ActiveRecord: 17.4ms | Allocations: 3709)
+
+
+Started GET "/users/find?search=Matis&commit=Search" for 127.0.0.1 at 2023-01-17 20:48:52 +0100
+Processing by UsersController#find as HTML
+  Parameters: {"search"=>"Matis", "commit"=>"Search"}
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  [1m[36mUser Load (16.1ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE (name LIKE '%Mat%')[0m
+  ↳ app/views/users/find.html.erb:6
+  Rendered users/find.html.erb within layouts/application (Duration: 18.7ms | Allocations: 730)
+  Rendered layout layouts/application.html.erb (Duration: 22.9ms | Allocations: 3347)
+Completed 200 OK in 49ms (Views: 7.7ms | ActiveRecord: 16.1ms | Allocations: 3704)
+
+
+Started GET "/users/find?search=m&commit=Search" for 127.0.0.1 at 2023-01-17 20:48:54 +0100
+Processing by UsersController#find as HTML
+  Parameters: {"search"=>"m", "commit"=>"Search"}
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  [1m[36mUser Load (17.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE (name LIKE '%m%')[0m
+  ↳ app/views/users/find.html.erb:6
+  Rendered users/find.html.erb within layouts/application (Duration: 20.2ms | Allocations: 743)
+  Rendered layout layouts/application.html.erb (Duration: 30.2ms | Allocations: 3348)
+Completed 200 OK in 57ms (Views: 14.3ms | ActiveRecord: 17.0ms | Allocations: 3705)
+
+
+Started GET "/users/find?search=Mati&commit=Search" for 127.0.0.1 at 2023-01-17 20:48:56 +0100
+Processing by UsersController#find as HTML
+  Parameters: {"search"=>"Mati", "commit"=>"Search"}
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  [1m[36mUser Load (17.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE (name LIKE '%Mat%')[0m
+  ↳ app/views/users/find.html.erb:6
+  Rendered users/find.html.erb within layouts/application (Duration: 21.3ms | Allocations: 730)
+  Rendered layout layouts/application.html.erb (Duration: 31.6ms | Allocations: 3337)
+Completed 200 OK in 57ms (Views: 15.7ms | ActiveRecord: 17.3ms | Allocations: 3694)
+
+
+Started GET "/users/find?search=Matid&commit=Search" for 127.0.0.1 at 2023-01-17 20:48:58 +0100
+Processing by UsersController#find as HTML
+  Parameters: {"search"=>"Matid", "commit"=>"Search"}
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  [1m[36mUser Load (17.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE (name LIKE '%Mat%')[0m
+  ↳ app/views/users/find.html.erb:6
+  Rendered users/find.html.erb within layouts/application (Duration: 20.9ms | Allocations: 730)
+  Rendered layout layouts/application.html.erb (Duration: 30.7ms | Allocations: 3341)
+Completed 200 OK in 54ms (Views: 14.6ms | ActiveRecord: 17.5ms | Allocations: 3698)
+
+
+Started GET "/users/find?search=Matis&commit=Search" for 127.0.0.1 at 2023-01-17 20:49:00 +0100
+Processing by UsersController#find as HTML
+  Parameters: {"search"=>"Matis", "commit"=>"Search"}
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  [1m[36mUser Load (16.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE (name LIKE '%Mat%')[0m
+  ↳ app/views/users/find.html.erb:6
+  Rendered users/find.html.erb within layouts/application (Duration: 19.7ms | Allocations: 730)
+  Rendered layout layouts/application.html.erb (Duration: 30.6ms | Allocations: 3333)
+Completed 200 OK in 61ms (Views: 15.7ms | ActiveRecord: 16.4ms | Allocations: 3690)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2023-01-17 20:50:21 +0100
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 4.4ms | Allocations: 1877)
+  Rendered layout layouts/application.html.erb (Duration: 8.6ms | Allocations: 4106)
+Completed 200 OK in 11ms (Views: 9.6ms | ActiveRecord: 0.0ms | Allocations: 4497)
+
+
+Started GET "/users/index" for 127.0.0.1 at 2023-01-17 20:50:25 +0100
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (18.1ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:21
+  Rendered users/index.html.erb within layouts/application (Duration: 40.6ms | Allocations: 2823)
+  Rendered layout layouts/application.html.erb (Duration: 46.9ms | Allocations: 5222)
+Completed 200 OK in 49ms (Views: 29.6ms | ActiveRecord: 18.1ms | Allocations: 5600)
+
+
+Started GET "/users/find" for 127.0.0.1 at 2023-01-17 20:51:41 +0100
+Processing by UsersController#find as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  [1m[36mUser Load (17.3ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/find.html.erb:16
+  Rendered users/find.html.erb within layouts/application (Duration: 40.0ms | Allocations: 1881)
+  Rendered layout layouts/application.html.erb (Duration: 59.9ms | Allocations: 14668)
+Completed 200 OK in 64ms (Views: 45.0ms | ActiveRecord: 17.3ms | Allocations: 15686)
+
+
+Started GET "/users/find?search=Ma&commit=Search" for 127.0.0.1 at 2023-01-17 20:52:17 +0100
+Processing by UsersController#find as HTML
+  Parameters: {"search"=>"Ma", "commit"=>"Search"}
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  [1m[36mUser Load (16.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE (name LIKE '%Ma%')[0m
+  ↳ app/views/users/find.html.erb:16
+  Rendered users/find.html.erb within layouts/application (Duration: 20.3ms | Allocations: 1878)
+  Rendered layout layouts/application.html.erb (Duration: 24.7ms | Allocations: 4602)
+Completed 200 OK in 54ms (Views: 11.0ms | ActiveRecord: 16.3ms | Allocations: 5646)
+
+
+Started GET "/users/find?search=M&commit=Search" for 127.0.0.1 at 2023-01-17 20:52:21 +0100
+Processing by UsersController#find as HTML
+  Parameters: {"search"=>"M", "commit"=>"Search"}
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  [1m[36mUser Load (22.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE (name LIKE '%M%')[0m
+  ↳ app/views/users/find.html.erb:16
+  Rendered users/find.html.erb within layouts/application (Duration: 28.9ms | Allocations: 1543)
+  Rendered layout layouts/application.html.erb (Duration: 36.7ms | Allocations: 3995)
+Completed 200 OK in 68ms (Views: 16.0ms | ActiveRecord: 22.3ms | Allocations: 4353)
+
+
+Started GET "/users/find?search=M&commit=Search" for 127.0.0.1 at 2023-01-17 20:53:02 +0100
+Processing by UsersController#find as HTML
+  Parameters: {"search"=>"M", "commit"=>"Search"}
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  Rendered users/find.html.erb within layouts/application (Duration: 4.3ms | Allocations: 2793)
+  Rendered layout layouts/application.html.erb (Duration: 4.6ms | Allocations: 2865)
+Completed 500 Internal Server Error in 29ms (ActiveRecord: 0.0ms | Allocations: 3873)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    14: 
+    15: <section id="likes_profiles">
+    16:   <h2 id="likes_title">Vous avez aimé</h2>
+    17:   <% @users.each do |item| %>
+    18:     <article class="users_profils">
+    19:       <div class="users_profils_top">
+    20:         <div class="users_profils_img">
+  
+app/views/users/find.html.erb:17
+Started GET "/users/find?search=M&commit=Search" for 127.0.0.1 at 2023-01-17 20:53:14 +0100
+Processing by UsersController#find as HTML
+  Parameters: {"search"=>"M", "commit"=>"Search"}
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  [1m[36mUser Load (17.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE (name LIKE '%M%')[0m
+  ↳ app/views/users/find.html.erb:17
+  Rendered users/find.html.erb within layouts/application (Duration: 25.0ms | Allocations: 2676)
+  Rendered layout layouts/application.html.erb (Duration: 38.3ms | Allocations: 5411)
+Completed 200 OK in 67ms (Views: 25.0ms | ActiveRecord: 17.0ms | Allocations: 6454)
+
+
+Started GET "/users/find?search=Ma&commit=Search" for 127.0.0.1 at 2023-01-17 20:53:22 +0100
+Processing by UsersController#find as HTML
+  Parameters: {"search"=>"Ma", "commit"=>"Search"}
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  [1m[36mUser Load (17.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE (name LIKE '%Ma%')[0m
+  ↳ app/views/users/find.html.erb:17
+  Rendered users/find.html.erb within layouts/application (Duration: 27.0ms | Allocations: 1975)
+  Rendered layout layouts/application.html.erb (Duration: 34.0ms | Allocations: 4437)
+Completed 200 OK in 60ms (Views: 17.9ms | ActiveRecord: 17.3ms | Allocations: 4795)
+
+
+Started GET "/users/find?search=Ma&commit=Search" for 127.0.0.1 at 2023-01-17 20:53:31 +0100
+Processing by UsersController#find as HTML
+  Parameters: {"search"=>"Ma", "commit"=>"Search"}
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  [1m[36mUser Load (19.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE (name LIKE '%Ma%')[0m
+  ↳ app/views/users/find.html.erb:16
+  Rendered users/find.html.erb within layouts/application (Duration: 25.9ms | Allocations: 2420)
+  Rendered layout layouts/application.html.erb (Duration: 31.0ms | Allocations: 5144)
+Completed 200 OK in 50ms (Views: 14.0ms | ActiveRecord: 19.5ms | Allocations: 6185)
+
+
+Started GET "/users/find?search=Ma&commit=Search" for 127.0.0.1 at 2023-01-17 20:54:27 +0100
+Processing by UsersController#find as HTML
+  Parameters: {"search"=>"Ma", "commit"=>"Search"}
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  [1m[36mUser Load (17.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE (name LIKE '%Ma%')[0m
+  ↳ app/views/users/find.html.erb:19
+  Rendered users/find.html.erb within layouts/application (Duration: 24.1ms | Allocations: 2432)
+  Rendered layout layouts/application.html.erb (Duration: 41.0ms | Allocations: 14658)
+Completed 200 OK in 62ms (Views: 25.7ms | ActiveRecord: 17.8ms | Allocations: 15700)
+
+
+Started GET "/users/find?search=Ma&commit=Search" for 127.0.0.1 at 2023-01-17 20:55:25 +0100
+Processing by UsersController#find as HTML
+  Parameters: {"search"=>"Ma", "commit"=>"Search"}
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  [1m[36mUser Load (262.9ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE (name LIKE '%Ma%')[0m
+  ↳ app/views/users/find.html.erb:19
+  Rendered users/find.html.erb within layouts/application (Duration: 268.7ms | Allocations: 1980)
+  Rendered layout layouts/application.html.erb (Duration: 291.4ms | Allocations: 12516)
+Completed 200 OK in 526ms (Views: 30.0ms | ActiveRecord: 262.9ms | Allocations: 12872)
+
+
+Started GET "/users/find?search=Ma&commit=Search" for 127.0.0.1 at 2023-01-17 20:56:53 +0100
+Processing by UsersController#find as HTML
+  Parameters: {"search"=>"Ma", "commit"=>"Search"}
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  [1m[36mUser Load (17.9ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE (name LIKE '%Ma%')[0m
+  ↳ app/views/users/find.html.erb:19
+  Rendered users/find.html.erb within layouts/application (Duration: 21.6ms | Allocations: 1975)
+  Rendered layout layouts/application.html.erb (Duration: 36.7ms | Allocations: 14040)
+Completed 200 OK in 53ms (Views: 19.3ms | ActiveRecord: 17.9ms | Allocations: 14395)
+
+
+Started GET "/users/find?search=Ma&commit=Search" for 127.0.0.1 at 2023-01-17 20:57:10 +0100
+Processing by UsersController#find as HTML
+  Parameters: {"search"=>"Ma", "commit"=>"Search"}
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  [1m[36mUser Load (17.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE (name LIKE '%Ma%')[0m
+  ↳ app/views/users/find.html.erb:19
+  Rendered users/find.html.erb within layouts/application (Duration: 24.3ms | Allocations: 1976)
+  Rendered layout layouts/application.html.erb (Duration: 47.4ms | Allocations: 13558)
+Completed 200 OK in 66ms (Views: 30.5ms | ActiveRecord: 17.8ms | Allocations: 13913)
+
+
+Started GET "/users/find?search=Ma&commit=Search" for 127.0.0.1 at 2023-01-17 20:57:49 +0100
+Processing by UsersController#find as HTML
+  Parameters: {"search"=>"Ma", "commit"=>"Search"}
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  [1m[36mUser Load (17.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE (name LIKE '%Ma%')[0m
+  ↳ app/views/users/find.html.erb:19
+  Rendered users/find.html.erb within layouts/application (Duration: 44.5ms | Allocations: 6445)
+  Rendered layout layouts/application.html.erb (Duration: 71.4ms | Allocations: 17760)
+Completed 200 OK in 91ms (Views: 54.6ms | ActiveRecord: 17.3ms | Allocations: 18115)
+
+
+Started GET "/users/find?search=M&commit=Search" for 127.0.0.1 at 2023-01-17 20:57:50 +0100
+Processing by UsersController#find as HTML
+  Parameters: {"search"=>"M", "commit"=>"Search"}
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  [1m[36mUser Load (16.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE (name LIKE '%M%')[0m
+  ↳ app/views/users/find.html.erb:19
+  Rendered users/find.html.erb within layouts/application (Duration: 21.9ms | Allocations: 2228)
+  Rendered layout layouts/application.html.erb (Duration: 27.8ms | Allocations: 4684)
+Completed 200 OK in 44ms (Views: 11.7ms | ActiveRecord: 16.8ms | Allocations: 5042)
+
+
+Started GET "/users/index" for 127.0.0.1 at 2023-01-17 20:57:56 +0100
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (18.4ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:21
+  Rendered users/index.html.erb within layouts/application (Duration: 41.6ms | Allocations: 2817)
+  Rendered layout layouts/application.html.erb (Duration: 46.9ms | Allocations: 5271)
+Completed 200 OK in 49ms (Views: 29.1ms | ActiveRecord: 18.4ms | Allocations: 5648)
+
+
+Started GET "/users/index" for 127.0.0.1 at 2023-01-17 20:58:13 +0100
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (16.7ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:21
+  Rendered users/index.html.erb within layouts/application (Duration: 57.9ms | Allocations: 6942)
+  Rendered layout layouts/application.html.erb (Duration: 77.8ms | Allocations: 16148)
+Completed 200 OK in 80ms (Views: 61.9ms | ActiveRecord: 16.7ms | Allocations: 16469)
+
+
+Started GET "/users/index" for 127.0.0.1 at 2023-01-17 20:58:17 +0100
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (18.2ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:21
+  Rendered users/index.html.erb within layouts/application (Duration: 41.7ms | Allocations: 3256)
+  Rendered layout layouts/application.html.erb (Duration: 59.5ms | Allocations: 12752)
+Completed 200 OK in 61ms (Views: 41.8ms | ActiveRecord: 18.2ms | Allocations: 13073)
+
+
+Started GET "/users/index" for 127.0.0.1 at 2023-01-17 20:58:25 +0100
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (15.2ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:21
+  Rendered users/index.html.erb within layouts/application (Duration: 47.7ms | Allocations: 3142)
+  Rendered layout layouts/application.html.erb (Duration: 64.5ms | Allocations: 5600)
+Completed 200 OK in 66ms (Views: 50.0ms | ActiveRecord: 15.2ms | Allocations: 5921)
+
+
+Started GET "/users/index" for 127.0.0.1 at 2023-01-17 20:58:57 +0100
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (20.5ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:21
+  Rendered users/index.html.erb within layouts/application (Duration: 40.9ms | Allocations: 2481)
+  Rendered layout layouts/application.html.erb (Duration: 59.7ms | Allocations: 14549)
+Completed 200 OK in 61ms (Views: 39.7ms | ActiveRecord: 20.5ms | Allocations: 14871)
+
+
+Started GET "/users/index" for 127.0.0.1 at 2023-01-17 20:59:16 +0100
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (15.9ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:21
+  Rendered users/index.html.erb within layouts/application (Duration: 46.5ms | Allocations: 2872)
+  Rendered layout layouts/application.html.erb (Duration: 54.7ms | Allocations: 6296)
+Completed 200 OK in 58ms (Views: 40.9ms | ActiveRecord: 15.9ms | Allocations: 7305)
+
+
+Started GET "/users/find" for 127.0.0.1 at 2023-01-17 20:59:24 +0100
+Processing by UsersController#find as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  [1m[36mUser Load (18.9ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/find.html.erb:19
+  Rendered users/find.html.erb within layouts/application (Duration: 72.8ms | Allocations: 30262)
+  Rendered layout layouts/application.html.erb (Duration: 74.9ms | Allocations: 32710)
+Completed 200 OK in 77ms (Views: 56.5ms | ActiveRecord: 18.9ms | Allocations: 33099)
+
+
+Started GET "/users/find" for 127.0.0.1 at 2023-01-17 21:00:03 +0100
+Processing by UsersController#find as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  [1m[36mUser Load (15.6ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/find.html.erb:19
+  Rendered users/find.html.erb within layouts/application (Duration: 45.1ms | Allocations: 6606)
+  Rendered layout layouts/application.html.erb (Duration: 59.7ms | Allocations: 15376)
+Completed 200 OK in 62ms (Views: 44.7ms | ActiveRecord: 15.6ms | Allocations: 15708)
+
+
+Started GET "/users/index" for 127.0.0.1 at 2023-01-17 21:00:07 +0100
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (15.7ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:21
+  Rendered users/index.html.erb within layouts/application (Duration: 46.0ms | Allocations: 2483)
+  Rendered layout layouts/application.html.erb (Duration: 53.1ms | Allocations: 4940)
+Completed 200 OK in 55ms (Views: 38.2ms | ActiveRecord: 15.7ms | Allocations: 5262)
+
+
+Started GET "/users/find$" for 127.0.0.1 at 2023-01-17 21:00:18 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/users/find$"):
+  
+Started GET "/users/find" for 127.0.0.1 at 2023-01-17 21:00:21 +0100
+Processing by UsersController#find as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  [1m[36mUser Load (67.4ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/find.html.erb:19
+  Rendered users/find.html.erb within layouts/application (Duration: 139.6ms | Allocations: 2881)
+  Rendered layout layouts/application.html.erb (Duration: 146.1ms | Allocations: 5340)
+Completed 200 OK in 148ms (Views: 79.5ms | ActiveRecord: 67.4ms | Allocations: 5672)
+
+
+Started GET "/users/find" for 127.0.0.1 at 2023-01-17 21:00:40 +0100
+Processing by UsersController#find as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  [1m[36mUser Load (20.2ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/find.html.erb:19
+  Rendered users/find.html.erb within layouts/application (Duration: 41.3ms | Allocations: 2664)
+  Rendered layout layouts/application.html.erb (Duration: 46.1ms | Allocations: 5386)
+Completed 200 OK in 52ms (Views: 29.2ms | ActiveRecord: 20.2ms | Allocations: 6404)
+
+
+Started GET "/users/find" for 127.0.0.1 at 2023-01-17 21:01:24 +0100
+Processing by UsersController#find as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  [1m[36mUser Load (21.0ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/find.html.erb:19
+  Rendered users/find.html.erb within layouts/application (Duration: 56.3ms | Allocations: 7086)
+  Rendered layout layouts/application.html.erb (Duration: 70.0ms | Allocations: 16285)
+Completed 200 OK in 72ms (Views: 49.8ms | ActiveRecord: 21.0ms | Allocations: 16618)
+
+
+Started GET "/users/index" for 127.0.0.1 at 2023-01-17 21:01:43 +0100
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (17.7ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:21
+  Rendered users/index.html.erb within layouts/application (Duration: 52.1ms | Allocations: 2820)
+  Rendered layout layouts/application.html.erb (Duration: 60.0ms | Allocations: 5272)
+Completed 200 OK in 62ms (Views: 43.3ms | ActiveRecord: 17.7ms | Allocations: 5650)
+
+
+Started GET "/users/index" for 127.0.0.1 at 2023-01-17 21:01:59 +0100
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (40.3ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:21
+  Rendered users/index.html.erb within layouts/application (Duration: 86.8ms | Allocations: 2476)
+  Rendered layout layouts/application.html.erb (Duration: 107.0ms | Allocations: 14543)
+Completed 200 OK in 109ms (Views: 67.4ms | ActiveRecord: 40.3ms | Allocations: 14864)
+
+
+Started GET "/users/index" for 127.0.0.1 at 2023-01-17 21:02:00 +0100
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (40.5ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:21
+  Rendered users/index.html.erb within layouts/application (Duration: 81.6ms | Allocations: 2476)
+  Rendered layout layouts/application.html.erb (Duration: 88.5ms | Allocations: 4932)
+Completed 200 OK in 91ms (Views: 48.8ms | ActiveRecord: 40.5ms | Allocations: 5253)
+
+
+Started GET "/users/index" for 127.0.0.1 at 2023-01-17 21:02:00 +0100
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (21.4ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:21
+  Rendered users/index.html.erb within layouts/application (Duration: 55.6ms | Allocations: 15107)
+  Rendered layout layouts/application.html.erb (Duration: 57.4ms | Allocations: 17587)
+Completed 200 OK in 59ms (Views: 36.4ms | ActiveRecord: 21.4ms | Allocations: 18016)
+
+
+Started GET "/users/index" for 127.0.0.1 at 2023-01-17 21:02:00 +0100
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+Started GET "/users/index" for 127.0.0.1 at 2023-01-17 21:02:00 +0100
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (19.3ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:21
+  Rendered users/index.html.erb within layouts/application (Duration: 41.5ms | Allocations: 12832)
+  Rendered layout layouts/application.html.erb (Duration: 49.4ms | Allocations: 16542)
+Completed 200 OK in 51ms (Views: 30.6ms | ActiveRecord: 19.3ms | Allocations: 16884)
+
+
+  [1m[36mUser Load (18.6ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:21
+  Rendered users/index.html.erb within layouts/application (Duration: 179.6ms | Allocations: 16796)
+  Rendered layout layouts/application.html.erb (Duration: 181.1ms | Allocations: 19258)
+Completed 200 OK in 183ms (Views: 143.8ms | ActiveRecord: 38.2ms | Allocations: 19649)
+
+
+Started GET "/users/index" for 127.0.0.1 at 2023-01-17 21:02:00 +0100
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (18.5ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:21
+  Rendered users/index.html.erb within layouts/application (Duration: 36.7ms | Allocations: 8204)
+  Rendered layout layouts/application.html.erb (Duration: 39.7ms | Allocations: 10914)
+Completed 200 OK in 41ms (Views: 21.5ms | ActiveRecord: 18.5ms | Allocations: 11235)
+
+
+Started GET "/users/index" for 127.0.0.1 at 2023-01-17 21:02:00 +0100
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (17.3ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:21
+  Rendered users/index.html.erb within layouts/application (Duration: 37.0ms | Allocations: 13017)
+  Rendered layout layouts/application.html.erb (Duration: 39.1ms | Allocations: 15591)
+Completed 200 OK in 40ms (Views: 22.2ms | ActiveRecord: 17.3ms | Allocations: 15954)
+
+
+Started GET "/users/index" for 127.0.0.1 at 2023-01-17 21:02:01 +0100
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (74.1ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:21
+  Rendered users/index.html.erb within layouts/application (Duration: 92.0ms | Allocations: 4498)
+  Rendered layout layouts/application.html.erb (Duration: 93.5ms | Allocations: 6942)
+Completed 200 OK in 94ms (Views: 19.7ms | ActiveRecord: 74.1ms | Allocations: 7324)
+
+
+Started GET "/users/index" for 127.0.0.1 at 2023-01-17 21:02:04 +0100
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (18.6ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:21
+  Rendered users/index.html.erb within layouts/application (Duration: 48.5ms | Allocations: 2476)
+  Rendered layout layouts/application.html.erb (Duration: 68.6ms | Allocations: 14555)
+Completed 200 OK in 70ms (Views: 50.4ms | ActiveRecord: 18.6ms | Allocations: 14876)
+
+
+Started GET "/users/find" for 127.0.0.1 at 2023-01-17 21:02:08 +0100
+Processing by UsersController#find as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  [1m[36mUser Load (17.1ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/find.html.erb:19
+  Rendered users/find.html.erb within layouts/application (Duration: 58.3ms | Allocations: 4525)
+  Rendered layout layouts/application.html.erb (Duration: 65.2ms | Allocations: 6988)
+Completed 200 OK in 67ms (Views: 48.7ms | ActiveRecord: 17.1ms | Allocations: 7321)
+
+
+Started GET "/users/find" for 127.0.0.1 at 2023-01-17 21:02:45 +0100
+Processing by UsersController#find as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  [1m[36mUser Load (18.0ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/find.html.erb:19
+  Rendered users/find.html.erb within layouts/application (Duration: 36.9ms | Allocations: 2213)
+  Rendered layout layouts/application.html.erb (Duration: 41.2ms | Allocations: 4666)
+Completed 200 OK in 43ms (Views: 23.8ms | ActiveRecord: 18.0ms | Allocations: 4999)
+
+
+Started GET "/users/find" for 127.0.0.1 at 2023-01-17 21:03:46 +0100
+Processing by UsersController#find as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  [1m[36mUser Load (19.1ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/find.html.erb:19
+  Rendered users/find.html.erb within layouts/application (Duration: 49.5ms | Allocations: 6607)
+  Rendered layout layouts/application.html.erb (Duration: 64.0ms | Allocations: 15812)
+Completed 200 OK in 66ms (Views: 45.8ms | ActiveRecord: 19.1ms | Allocations: 16144)
+
+
+Started GET "/users/index" for 127.0.0.1 at 2023-01-17 21:03:50 +0100
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (17.5ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:21
+  Rendered users/index.html.erb within layouts/application (Duration: 40.3ms | Allocations: 2481)
+  Rendered layout layouts/application.html.erb (Duration: 47.3ms | Allocations: 4933)
+Completed 200 OK in 49ms (Views: 30.5ms | ActiveRecord: 17.5ms | Allocations: 5254)
+
+
+Started GET "/users/find" for 127.0.0.1 at 2023-01-17 21:04:09 +0100
+Processing by UsersController#find as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  [1m[36mUser Load (49.9ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/find.html.erb:18
+  Rendered users/find.html.erb within layouts/application (Duration: 81.5ms | Allocations: 2667)
+  Rendered layout layouts/application.html.erb (Duration: 89.8ms | Allocations: 5392)
+Completed 200 OK in 96ms (Views: 43.4ms | ActiveRecord: 49.9ms | Allocations: 6411)
+
+
+Started GET "/users/find" for 127.0.0.1 at 2023-01-17 21:04:17 +0100
+Processing by UsersController#find as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  [1m[36mUser Load (18.0ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/find.html.erb:18
+  Rendered users/find.html.erb within layouts/application (Duration: 39.7ms | Allocations: 2669)
+  Rendered layout layouts/application.html.erb (Duration: 44.6ms | Allocations: 5392)
+Completed 200 OK in 49ms (Views: 29.3ms | ActiveRecord: 18.0ms | Allocations: 6412)
+
+
+Started GET "/users/find" for 127.0.0.1 at 2023-01-17 21:04:37 +0100
+Processing by UsersController#find as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  [1m[36mUser Load (17.6ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/find.html.erb:18
+  Rendered users/find.html.erb within layouts/application (Duration: 55.7ms | Allocations: 7277)
+  Rendered layout layouts/application.html.erb (Duration: 72.1ms | Allocations: 16473)
+Completed 200 OK in 74ms (Views: 55.2ms | ActiveRecord: 17.6ms | Allocations: 16807)
+
+
+Started GET "/users/find" for 127.0.0.1 at 2023-01-17 21:05:06 +0100
+Processing by UsersController#find as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  [1m[36mUser Load (15.9ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/find.html.erb:18
+  Rendered users/find.html.erb within layouts/application (Duration: 46.7ms | Allocations: 7076)
+  Rendered layout layouts/application.html.erb (Duration: 60.8ms | Allocations: 16275)
+Completed 200 OK in 62ms (Views: 45.5ms | ActiveRecord: 15.9ms | Allocations: 16607)
+
+
+Started GET "/users/find" for 127.0.0.1 at 2023-01-17 21:05:10 +0100
+Processing by UsersController#find as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  [1m[36mUser Load (17.2ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/find.html.erb:18
+  Rendered users/find.html.erb within layouts/application (Duration: 56.1ms | Allocations: 7076)
+  Rendered layout layouts/application.html.erb (Duration: 77.5ms | Allocations: 15818)
+Completed 200 OK in 80ms (Views: 61.4ms | ActiveRecord: 17.2ms | Allocations: 16151)
+
+
+Started GET "/users/find" for 127.0.0.1 at 2023-01-17 21:06:30 +0100
+Processing by UsersController#find as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  [1m[36mUser Load (14.6ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/find.html.erb:20
+  Rendered users/find.html.erb within layouts/application (Duration: 41.7ms | Allocations: 7550)
+  Rendered layout layouts/application.html.erb (Duration: 53.7ms | Allocations: 17019)
+Completed 200 OK in 58ms (Views: 41.7ms | ActiveRecord: 14.6ms | Allocations: 18037)
+
+
+Started GET "/users/find" for 127.0.0.1 at 2023-01-17 21:06:39 +0100
+Processing by UsersController#find as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  [1m[36mUser Load (17.6ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/find.html.erb:20
+  Rendered users/find.html.erb within layouts/application (Duration: 52.4ms | Allocations: 6587)
+  Rendered layout layouts/application.html.erb (Duration: 72.6ms | Allocations: 15789)
+Completed 200 OK in 75ms (Views: 56.0ms | ActiveRecord: 17.6ms | Allocations: 16122)
+
+
+Started GET "/users/find" for 127.0.0.1 at 2023-01-17 21:06:39 +0100
+Processing by UsersController#find as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  [1m[36mUser Load (18.7ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/find.html.erb:20
+  Rendered users/find.html.erb within layouts/application (Duration: 70.9ms | Allocations: 2213)
+  Rendered layout layouts/application.html.erb (Duration: 76.3ms | Allocations: 4671)
+Completed 200 OK in 78ms (Views: 58.2ms | ActiveRecord: 18.7ms | Allocations: 5003)
+
+
+Started GET "/users/find" for 127.0.0.1 at 2023-01-17 21:07:32 +0100
+Processing by UsersController#find as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  [1m[36mUser Load (17.1ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/find.html.erb:20
+  Rendered users/find.html.erb within layouts/application (Duration: 37.1ms | Allocations: 2213)
+  Rendered layout layouts/application.html.erb (Duration: 41.4ms | Allocations: 4669)
+Completed 200 OK in 43ms (Views: 25.0ms | ActiveRecord: 17.1ms | Allocations: 5001)
+
+
+Started GET "/users/find" for 127.0.0.1 at 2023-01-17 21:07:44 +0100
+Processing by UsersController#find as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  [1m[36mUser Load (18.1ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/find.html.erb:20
+  Rendered users/find.html.erb within layouts/application (Duration: 62.7ms | Allocations: 7081)
+  Rendered layout layouts/application.html.erb (Duration: 82.6ms | Allocations: 16309)
+Completed 200 OK in 85ms (Views: 65.4ms | ActiveRecord: 18.1ms | Allocations: 16642)
+
+
+Started GET "/users/find" for 127.0.0.1 at 2023-01-17 21:08:04 +0100
+Processing by UsersController#find as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  [1m[36mUser Load (19.8ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/find.html.erb:20
+  Rendered users/find.html.erb within layouts/application (Duration: 47.1ms | Allocations: 7071)
+  Rendered layout layouts/application.html.erb (Duration: 62.4ms | Allocations: 16258)
+Completed 200 OK in 64ms (Views: 43.2ms | ActiveRecord: 19.8ms | Allocations: 16590)
+
+
+Started GET "/users/find" for 127.0.0.1 at 2023-01-17 21:08:24 +0100
+Processing by UsersController#find as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  [1m[36mUser Load (17.6ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/find.html.erb:19
+  Rendered users/find.html.erb within layouts/application (Duration: 42.8ms | Allocations: 3265)
+  Rendered layout layouts/application.html.erb (Duration: 49.4ms | Allocations: 5991)
+Completed 200 OK in 54ms (Views: 34.5ms | ActiveRecord: 17.6ms | Allocations: 7009)
+
+
+Started GET "/users/find?search=m" for 127.0.0.1 at 2023-01-17 21:08:27 +0100
+Processing by UsersController#find as HTML
+  Parameters: {"search"=>"m"}
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  [1m[36mUser Load (17.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE (name LIKE '%m%')[0m
+  ↳ app/views/users/find.html.erb:19
+  Rendered users/find.html.erb within layouts/application (Duration: 25.6ms | Allocations: 2171)
+  Rendered layout layouts/application.html.erb (Duration: 32.7ms | Allocations: 4617)
+Completed 200 OK in 50ms (Views: 16.6ms | ActiveRecord: 17.2ms | Allocations: 4975)
+
+
+Started GET "/users/find?search=Matis" for 127.0.0.1 at 2023-01-17 21:08:31 +0100
+Processing by UsersController#find as HTML
+  Parameters: {"search"=>"Matis"}
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  [1m[36mUser Load (15.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE (name LIKE '%Mat%')[0m
+  ↳ app/views/users/find.html.erb:19
+  Rendered users/find.html.erb within layouts/application (Duration: 22.4ms | Allocations: 1921)
+  Rendered layout layouts/application.html.erb (Duration: 29.9ms | Allocations: 4379)
+Completed 200 OK in 56ms (Views: 15.3ms | ActiveRecord: 15.5ms | Allocations: 4736)
+
+
+Started GET "/users/find?search=Matis" for 127.0.0.1 at 2023-01-17 21:08:34 +0100
+Processing by UsersController#find as HTML
+  Parameters: {"search"=>"Matis"}
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  [1m[36mUser Load (17.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE (name LIKE '%Mat%')[0m
+  ↳ app/views/users/find.html.erb:19
+  Rendered users/find.html.erb within layouts/application (Duration: 23.5ms | Allocations: 1921)
+  Rendered layout layouts/application.html.erb (Duration: 27.4ms | Allocations: 4374)
+Completed 200 OK in 47ms (Views: 10.8ms | ActiveRecord: 17.5ms | Allocations: 4729)
+
+
+Started GET "/users/find?search=" for 127.0.0.1 at 2023-01-17 21:08:37 +0100
+Processing by UsersController#find as HTML
+  Parameters: {"search"=>""}
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  [1m[36mUser Load (17.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE (name LIKE '%%')[0m
+  ↳ app/views/users/find.html.erb:19
+  Rendered users/find.html.erb within layouts/application (Duration: 23.2ms | Allocations: 2176)
+  Rendered layout layouts/application.html.erb (Duration: 26.9ms | Allocations: 4637)
+Completed 200 OK in 50ms (Views: 10.2ms | ActiveRecord: 17.4ms | Allocations: 4995)
+
+
+Started GET "/users/find?search=" for 127.0.0.1 at 2023-01-17 21:08:40 +0100
+Processing by UsersController#find as HTML
+  Parameters: {"search"=>""}
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  [1m[36mUser Load (17.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE (name LIKE '%%')[0m
+  ↳ app/views/users/find.html.erb:19
+  Rendered users/find.html.erb within layouts/application (Duration: 25.8ms | Allocations: 2171)
+  Rendered layout layouts/application.html.erb (Duration: 33.8ms | Allocations: 4619)
+Completed 200 OK in 57ms (Views: 17.6ms | ActiveRecord: 17.2ms | Allocations: 4976)
+
+
+Started GET "/users/find?search=" for 127.0.0.1 at 2023-01-17 21:08:41 +0100
+Processing by UsersController#find as HTML
+  Parameters: {"search"=>""}
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  [1m[36mUser Load (17.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE (name LIKE '%%')[0m
+  ↳ app/views/users/find.html.erb:19
+  Rendered users/find.html.erb within layouts/application (Duration: 23.5ms | Allocations: 2171)
+  Rendered layout layouts/application.html.erb (Duration: 28.5ms | Allocations: 4627)
+Completed 200 OK in 52ms (Views: 12.3ms | ActiveRecord: 17.2ms | Allocations: 4984)
+
+
+Started GET "/users/find?search=" for 127.0.0.1 at 2023-01-17 21:08:42 +0100
+Processing by UsersController#find as HTML
+  Parameters: {"search"=>""}
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  [1m[36mUser Load (17.1ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE (name LIKE '%%')[0m
+  ↳ app/views/users/find.html.erb:19
+  Rendered users/find.html.erb within layouts/application (Duration: 24.9ms | Allocations: 2173)
+  Rendered layout layouts/application.html.erb (Duration: 30.3ms | Allocations: 4633)
+Completed 200 OK in 60ms (Views: 14.3ms | ActiveRecord: 17.1ms | Allocations: 4991)
+
+
+Started GET "/users/find?search=m" for 127.0.0.1 at 2023-01-17 21:08:50 +0100
+Processing by UsersController#find as HTML
+  Parameters: {"search"=>"m"}
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  [1m[36mUser Load (16.9ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE (name LIKE '%m%')[0m
+  ↳ app/views/users/find.html.erb:19
+  Rendered users/find.html.erb within layouts/application (Duration: 26.1ms | Allocations: 2171)
+  Rendered layout layouts/application.html.erb (Duration: 33.8ms | Allocations: 4619)
+Completed 200 OK in 61ms (Views: 18.4ms | ActiveRecord: 16.9ms | Allocations: 4976)
+
+
+Started GET "/users/find?search=m" for 127.0.0.1 at 2023-01-17 21:09:20 +0100
+Processing by UsersController#find as HTML
+  Parameters: {"search"=>"m"}
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  [1m[36mUser Load (17.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE (name LIKE '%m%')[0m
+  ↳ app/views/users/find.html.erb:19
+  Rendered users/find.html.erb within layouts/application (Duration: 29.1ms | Allocations: 7033)
+  Rendered layout layouts/application.html.erb (Duration: 41.8ms | Allocations: 16224)
+Completed 200 OK in 61ms (Views: 24.9ms | ActiveRecord: 17.6ms | Allocations: 16579)
+
+
+Started GET "/users/find?search=m" for 127.0.0.1 at 2023-01-17 21:09:59 +0100
+Processing by UsersController#find as HTML
+  Parameters: {"search"=>"m"}
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  [1m[36mUser Load (16.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE (name LIKE '%m%')[0m
+  ↳ app/views/users/find.html.erb:19
+  Rendered users/find.html.erb within layouts/application (Duration: 31.4ms | Allocations: 7039)
+  Rendered layout layouts/application.html.erb (Duration: 46.5ms | Allocations: 16220)
+Completed 200 OK in 63ms (Views: 30.6ms | ActiveRecord: 16.8ms | Allocations: 16575)
+
+
+Started GET "/users/find?search=m" for 127.0.0.1 at 2023-01-17 21:10:25 +0100
+Processing by UsersController#find as HTML
+  Parameters: {"search"=>"m"}
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  [1m[36mUser Load (69.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE (name LIKE '%m%')[0m
+  ↳ app/views/users/find.html.erb:19
+  Rendered users/find.html.erb within layouts/application (Duration: 82.8ms | Allocations: 2845)
+  Rendered layout layouts/application.html.erb (Duration: 90.6ms | Allocations: 5313)
+Completed 200 OK in 157ms (Views: 23.1ms | ActiveRecord: 69.0ms | Allocations: 5669)
+
+
+Started GET "/userrs/new" for 127.0.0.1 at 2023-01-17 21:10:53 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/userrs/new"):
+  
+Started GET "/users/new" for 127.0.0.1 at 2023-01-17 21:10:56 +0100
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 5.4ms | Allocations: 1866)
+  Rendered layout layouts/application.html.erb (Duration: 9.4ms | Allocations: 4164)
+Completed 200 OK in 12ms (Views: 10.2ms | ActiveRecord: 0.0ms | Allocations: 4545)
+
+
+Started GET "/users/index" for 127.0.0.1 at 2023-01-17 21:11:16 +0100
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (19.1ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:21
+  Rendered users/index.html.erb within layouts/application (Duration: 44.2ms | Allocations: 2816)
+  Rendered layout layouts/application.html.erb (Duration: 69.2ms | Allocations: 14908)
+Completed 200 OK in 72ms (Views: 50.8ms | ActiveRecord: 19.1ms | Allocations: 15285)
+
+
+Started GET "/users/find" for 127.0.0.1 at 2023-01-17 21:11:19 +0100
+Processing by UsersController#find as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  [1m[36mUser Load (17.9ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/find.html.erb:19
+  Rendered users/find.html.erb within layouts/application (Duration: 52.3ms | Allocations: 4466)
+  Rendered layout layouts/application.html.erb (Duration: 59.9ms | Allocations: 6920)
+Completed 200 OK in 61ms (Views: 42.7ms | ActiveRecord: 17.9ms | Allocations: 7252)
+
+
+Started GET "/users/find" for 127.0.0.1 at 2023-01-17 21:11:36 +0100
+Processing by UsersController#find as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  [1m[36mUser Load (17.5ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/find.html.erb:19
+  Rendered users/find.html.erb within layouts/application (Duration: 59.6ms | Allocations: 2162)
+  Rendered layout layouts/application.html.erb (Duration: 61.5ms | Allocations: 4623)
+Completed 200 OK in 66ms (Views: 47.6ms | ActiveRecord: 17.5ms | Allocations: 4956)
+
+
+Started GET "/users/find" for 127.0.0.1 at 2023-01-17 21:11:56 +0100
+Processing by UsersController#find as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  [1m[36mUser Load (16.8ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/find.html.erb:19
+  Rendered users/find.html.erb within layouts/application (Duration: 56.0ms | Allocations: 7032)
+  Rendered layout layouts/application.html.erb (Duration: 79.8ms | Allocations: 16233)
+Completed 200 OK in 82ms (Views: 64.1ms | ActiveRecord: 16.8ms | Allocations: 16565)
+
+
+Started GET "/users/find" for 127.0.0.1 at 2023-01-17 21:12:00 +0100
+Processing by UsersController#find as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  [1m[36mUser Load (17.9ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/find.html.erb:19
+  Rendered users/find.html.erb within layouts/application (Duration: 42.9ms | Allocations: 2825)
+  Rendered layout layouts/application.html.erb (Duration: 48.3ms | Allocations: 5285)
+Completed 200 OK in 50ms (Views: 31.3ms | ActiveRecord: 17.9ms | Allocations: 5618)
+
+
+Started GET "/users/find" for 127.0.0.1 at 2023-01-17 21:12:08 +0100
+Processing by UsersController#find as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  [1m[36mUser Load (17.2ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/find.html.erb:19
+  Rendered users/find.html.erb within layouts/application (Duration: 46.5ms | Allocations: 7036)
+  Rendered layout layouts/application.html.erb (Duration: 63.0ms | Allocations: 16242)
+Completed 200 OK in 64ms (Views: 46.4ms | ActiveRecord: 17.2ms | Allocations: 16574)
+
+
+Started GET "/users/find" for 127.0.0.1 at 2023-01-17 21:12:21 +0100
+Processing by UsersController#find as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  [1m[36mUser Load (17.5ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/find.html.erb:19
+  Rendered users/find.html.erb within layouts/application (Duration: 47.0ms | Allocations: 6539)
+  Rendered layout layouts/application.html.erb (Duration: 65.1ms | Allocations: 15727)
+Completed 200 OK in 67ms (Views: 48.4ms | ActiveRecord: 17.5ms | Allocations: 16059)
+
+
+Started GET "/users/find" for 127.0.0.1 at 2023-01-17 21:13:19 +0100
+Processing by UsersController#find as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  [1m[36mUser Load (16.6ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/find.html.erb:19
+  Rendered users/find.html.erb within layouts/application (Duration: 40.5ms | Allocations: 2164)
+  Rendered layout layouts/application.html.erb (Duration: 47.0ms | Allocations: 4638)
+Completed 200 OK in 50ms (Views: 31.5ms | ActiveRecord: 16.6ms | Allocations: 4971)
+
+
+Started GET "/users/find" for 127.0.0.1 at 2023-01-17 21:14:03 +0100
+Processing by UsersController#find as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  [1m[36mUser Load (19.6ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/find.html.erb:19
+  Rendered users/find.html.erb within layouts/application (Duration: 41.8ms | Allocations: 2159)
+  Rendered layout layouts/application.html.erb (Duration: 46.1ms | Allocations: 4613)
+Completed 200 OK in 49ms (Views: 27.8ms | ActiveRecord: 19.6ms | Allocations: 4946)
+
+
+Started GET "/users/find" for 127.0.0.1 at 2023-01-17 21:14:24 +0100
+Processing by UsersController#find as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  [1m[36mUser Load (18.3ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/find.html.erb:19
+  Rendered users/find.html.erb within layouts/application (Duration: 40.9ms | Allocations: 2742)
+  Rendered layout layouts/application.html.erb (Duration: 47.8ms | Allocations: 5463)
+Completed 200 OK in 53ms (Views: 32.5ms | ActiveRecord: 18.3ms | Allocations: 6484)
+
+
+Started GET "/users/find" for 127.0.0.1 at 2023-01-17 21:15:32 +0100
+Processing by UsersController#find as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  [1m[36mUser Load (16.7ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/find.html.erb:20
+  Rendered users/find.html.erb within layouts/application (Duration: 43.4ms | Allocations: 2612)
+  Rendered layout layouts/application.html.erb (Duration: 52.1ms | Allocations: 5338)
+Completed 200 OK in 58ms (Views: 38.7ms | ActiveRecord: 16.7ms | Allocations: 6357)
+
+
+Started GET "/users/index" for 127.0.0.1 at 2023-01-17 21:16:02 +0100
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (16.5ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:21
+  Rendered users/index.html.erb within layouts/application (Duration: 38.4ms | Allocations: 2816)
+  Rendered layout layouts/application.html.erb (Duration: 41.9ms | Allocations: 5263)
+Completed 200 OK in 44ms (Views: 26.0ms | ActiveRecord: 16.5ms | Allocations: 5641)
+
+
+Started GET "/users/find" for 127.0.0.1 at 2023-01-17 21:16:09 +0100
+Processing by UsersController#find as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  [1m[36mUser Load (16.2ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/find.html.erb:20
+  Rendered users/find.html.erb within layouts/application (Duration: 47.4ms | Allocations: 2174)
+  Rendered layout layouts/application.html.erb (Duration: 53.4ms | Allocations: 4649)
+Completed 200 OK in 56ms (Views: 38.1ms | ActiveRecord: 16.2ms | Allocations: 4982)
+
+
+Started GET "/users/find" for 127.0.0.1 at 2023-01-17 21:17:03 +0100
+Processing by UsersController#find as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  [1m[36mUser Load (17.0ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/find.html.erb:20
+  Rendered users/find.html.erb within layouts/application (Duration: 45.8ms | Allocations: 7047)
+  Rendered layout layouts/application.html.erb (Duration: 61.8ms | Allocations: 16246)
+Completed 200 OK in 64ms (Views: 45.3ms | ActiveRecord: 17.0ms | Allocations: 16578)
+
+
+Started GET "/users/find" for 127.0.0.1 at 2023-01-17 21:17:15 +0100
+Processing by UsersController#find as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  [1m[36mUser Load (17.8ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/find.html.erb:20
+  Rendered users/find.html.erb within layouts/application (Duration: 55.7ms | Allocations: 7047)
+  Rendered layout layouts/application.html.erb (Duration: 73.9ms | Allocations: 16247)
+Completed 200 OK in 76ms (Views: 56.8ms | ActiveRecord: 17.8ms | Allocations: 16579)
+
+
+Started GET "/users/find" for 127.0.0.1 at 2023-01-17 21:17:42 +0100
+Processing by UsersController#find as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  [1m[36mUser Load (17.9ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/find.html.erb:20
+  Rendered users/find.html.erb within layouts/application (Duration: 46.3ms | Allocations: 7050)
+  Rendered layout layouts/application.html.erb (Duration: 61.6ms | Allocations: 16244)
+Completed 200 OK in 64ms (Views: 44.7ms | ActiveRecord: 17.9ms | Allocations: 16576)
+
+
+Started GET "/users/find" for 127.0.0.1 at 2023-01-17 21:17:50 +0100
+Processing by UsersController#find as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  [1m[36mUser Load (17.7ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/find.html.erb:20
+  Rendered users/find.html.erb within layouts/application (Duration: 45.7ms | Allocations: 7051)
+  Rendered layout layouts/application.html.erb (Duration: 64.9ms | Allocations: 16253)
+Completed 200 OK in 67ms (Views: 47.9ms | ActiveRecord: 17.7ms | Allocations: 16585)
+
+
+Started GET "/users/find" for 127.0.0.1 at 2023-01-17 21:18:24 +0100
+Processing by UsersController#find as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  [1m[36mUser Load (132.7ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/find.html.erb:20
+  Rendered users/find.html.erb within layouts/application (Duration: 284.1ms | Allocations: 7047)
+  Rendered layout layouts/application.html.erb (Duration: 308.2ms | Allocations: 16239)
+Completed 200 OK in 310ms (Views: 176.1ms | ActiveRecord: 132.7ms | Allocations: 16571)
+
+
+Started GET "/users/find" for 127.0.0.1 at 2023-01-17 21:18:24 +0100
+Processing by UsersController#find as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  [1m[36mUser Load (137.2ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/find.html.erb:20
+  Rendered users/find.html.erb within layouts/application (Duration: 255.1ms | Allocations: 6876)
+  Rendered layout layouts/application.html.erb (Duration: 258.3ms | Allocations: 9337)
+Completed 200 OK in 259ms (Views: 121.5ms | ActiveRecord: 137.2ms | Allocations: 9715)
+
+
+Started GET "/users/find" for 127.0.0.1 at 2023-01-17 21:18:25 +0100
+Processing by UsersController#find as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  [1m[36mUser Load (115.4ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/find.html.erb:20
+  Rendered users/find.html.erb within layouts/application (Duration: 237.2ms | Allocations: 20130)
+  Rendered layout layouts/application.html.erb (Duration: 240.7ms | Allocations: 22590)
+Completed 200 OK in 242ms (Views: 125.6ms | ActiveRecord: 115.4ms | Allocations: 23006)
+
+
+Started GET "/users/find" for 127.0.0.1 at 2023-01-17 21:18:45 +0100
+Processing by UsersController#find as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  [1m[36mUser Load (40.3ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/find.html.erb:20
+  Rendered users/find.html.erb within layouts/application (Duration: 69.0ms | Allocations: 7054)
+  Rendered layout layouts/application.html.erb (Duration: 92.1ms | Allocations: 16259)
+Completed 200 OK in 94ms (Views: 52.5ms | ActiveRecord: 40.3ms | Allocations: 16592)
+
+
+Started GET "/users/index" for 127.0.0.1 at 2023-01-17 21:18:46 +0100
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (27.3ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:21
+  Rendered users/index.html.erb within layouts/application (Duration: 57.8ms | Allocations: 2481)
+  Rendered layout layouts/application.html.erb (Duration: 62.6ms | Allocations: 4936)
+Completed 200 OK in 65ms (Views: 36.0ms | ActiveRecord: 27.3ms | Allocations: 5257)
+
+
+Started GET "/users/find" for 127.0.0.1 at 2023-01-17 21:18:47 +0100
+Processing by UsersController#find as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  [1m[36mUser Load (18.1ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/find.html.erb:20
+  Rendered users/find.html.erb within layouts/application (Duration: 40.4ms | Allocations: 2172)
+  Rendered layout layouts/application.html.erb (Duration: 45.8ms | Allocations: 4633)
+Completed 200 OK in 48ms (Views: 28.5ms | ActiveRecord: 18.1ms | Allocations: 4966)
+
+
+Started GET "/users/index" for 127.0.0.1 at 2023-01-17 21:18:48 +0100
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (16.9ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:21
+  Rendered users/index.html.erb within layouts/application (Duration: 35.1ms | Allocations: 2476)
+  Rendered layout layouts/application.html.erb (Duration: 36.6ms | Allocations: 4933)
+Completed 200 OK in 38ms (Views: 20.2ms | ActiveRecord: 16.9ms | Allocations: 5255)
+
+
+Started GET "/users/find" for 127.0.0.1 at 2023-01-17 21:18:55 +0100
+Processing by UsersController#find as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  [1m[36mUser Load (17.6ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/find.html.erb:20
+  Rendered users/find.html.erb within layouts/application (Duration: 45.6ms | Allocations: 7056)
+  Rendered layout layouts/application.html.erb (Duration: 63.7ms | Allocations: 16276)
+Completed 200 OK in 65ms (Views: 46.7ms | ActiveRecord: 17.6ms | Allocations: 16609)
+
+
+Started GET "/users/find" for 127.0.0.1 at 2023-01-17 21:19:00 +0100
+Processing by UsersController#find as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  [1m[36mUser Load (18.3ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/find.html.erb:20
+  Rendered users/find.html.erb within layouts/application (Duration: 47.5ms | Allocations: 2837)
+  Rendered layout layouts/application.html.erb (Duration: 55.3ms | Allocations: 5307)
+Completed 200 OK in 57ms (Views: 37.8ms | ActiveRecord: 18.3ms | Allocations: 5640)
+
+
+Started GET "/users/find" for 127.0.0.1 at 2023-01-17 21:19:03 +0100
+Processing by UsersController#find as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  [1m[36mUser Load (19.6ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/find.html.erb:20
+  Rendered users/find.html.erb within layouts/application (Duration: 50.6ms | Allocations: 2169)
+  Rendered layout layouts/application.html.erb (Duration: 55.8ms | Allocations: 4627)
+Completed 200 OK in 58ms (Views: 37.2ms | ActiveRecord: 19.6ms | Allocations: 4959)
+
+
+Started GET "/users/find" for 127.0.0.1 at 2023-01-17 21:19:03 +0100
+Processing by UsersController#find as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  [1m[36mUser Load (32.2ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/find.html.erb:20
+  Rendered users/find.html.erb within layouts/application (Duration: 58.6ms | Allocations: 3871)
+  Rendered layout layouts/application.html.erb (Duration: 60.0ms | Allocations: 6338)
+Completed 200 OK in 61ms (Views: 28.0ms | ActiveRecord: 32.2ms | Allocations: 6693)
+
+
+Started GET "/users/find" for 127.0.0.1 at 2023-01-17 21:19:03 +0100
+Processing by UsersController#find as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  [1m[36mUser Load (18.0ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/find.html.erb:20
+  Rendered users/find.html.erb within layouts/application (Duration: 35.6ms | Allocations: 13969)
+  Rendered layout layouts/application.html.erb (Duration: 37.4ms | Allocations: 16434)
+Completed 200 OK in 40ms (Views: 20.3ms | ActiveRecord: 18.0ms | Allocations: 16818)
+
+
+Started GET "/users/find" for 127.0.0.1 at 2023-01-17 21:19:03 +0100
+Processing by UsersController#find as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  [1m[36mUser Load (44.8ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/find.html.erb:20
+  Rendered users/find.html.erb within layouts/application (Duration: 78.1ms | Allocations: 11986)
+  Rendered layout layouts/application.html.erb (Duration: 79.6ms | Allocations: 14438)
+Completed 200 OK in 80ms (Views: 35.0ms | ActiveRecord: 44.8ms | Allocations: 14818)
+
+
+Started GET "/users/find" for 127.0.0.1 at 2023-01-17 21:19:04 +0100
+Processing by UsersController#find as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  [1m[36mUser Load (17.9ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/find.html.erb:20
+  Rendered users/find.html.erb within layouts/application (Duration: 37.9ms | Allocations: 15114)
+  Rendered layout layouts/application.html.erb (Duration: 43.7ms | Allocations: 17929)
+Completed 200 OK in 47ms (Views: 26.5ms | ActiveRecord: 17.9ms | Allocations: 18341)
+
+
+Started GET "/users/find" for 127.0.0.1 at 2023-01-17 21:19:04 +0100
+Processing by UsersController#find as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  [1m[36mUser Load (17.5ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/find.html.erb:20
+  Rendered users/find.html.erb within layouts/application (Duration: 38.6ms | Allocations: 12537)
+  Rendered layout layouts/application.html.erb (Duration: 41.8ms | Allocations: 15114)
+Completed 200 OK in 43ms (Views: 24.7ms | ActiveRecord: 17.5ms | Allocations: 15628)
+
+
+Started GET "/users/find" for 127.0.0.1 at 2023-01-17 21:19:04 +0100
+Processing by UsersController#find as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  [1m[36mUser Load (33.0ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/find.html.erb:20
+  Rendered users/find.html.erb within layouts/application (Duration: 50.3ms | Allocations: 6691)
+  Rendered layout layouts/application.html.erb (Duration: 51.9ms | Allocations: 9146)
+Completed 200 OK in 53ms (Views: 19.3ms | ActiveRecord: 33.0ms | Allocations: 9479)
+
+
+Started GET "/users/find" for 127.0.0.1 at 2023-01-17 21:19:04 +0100
+Processing by UsersController#find as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  [1m[36mUser Load (19.4ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/find.html.erb:20
+  Rendered users/find.html.erb within layouts/application (Duration: 52.4ms | Allocations: 2169)
+  Rendered layout layouts/application.html.erb (Duration: 53.9ms | Allocations: 4615)
+Completed 200 OK in 55ms (Views: 34.8ms | ActiveRecord: 19.4ms | Allocations: 4947)
+
+
+Started GET "/users/find" for 127.0.0.1 at 2023-01-17 21:19:04 +0100
+Processing by UsersController#find as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  [1m[36mUser Load (24.7ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/find.html.erb:20
+  Rendered users/find.html.erb within layouts/application (Duration: 63.2ms | Allocations: 2172)
+  Rendered layout layouts/application.html.erb (Duration: 64.7ms | Allocations: 4631)
+Completed 200 OK in 65ms (Views: 40.2ms | ActiveRecord: 24.7ms | Allocations: 4964)
+
+
+Started GET "/users/find" for 127.0.0.1 at 2023-01-17 21:19:05 +0100
+Processing by UsersController#find as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  [1m[36mUser Load (17.6ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/find.html.erb:20
+  Rendered users/find.html.erb within layouts/application (Duration: 69.4ms | Allocations: 2170)
+  Rendered layout layouts/application.html.erb (Duration: 70.9ms | Allocations: 4629)
+Completed 200 OK in 71ms (Views: 53.5ms | ActiveRecord: 17.6ms | Allocations: 4961)
+
+
+Started GET "/users/find" for 127.0.0.1 at 2023-01-17 21:19:10 +0100
+Processing by UsersController#find as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  [1m[36mUser Load (17.2ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/find.html.erb:20
+  Rendered users/find.html.erb within layouts/application (Duration: 49.9ms | Allocations: 7052)
+  Rendered layout layouts/application.html.erb (Duration: 67.3ms | Allocations: 16261)
+Completed 200 OK in 69ms (Views: 50.7ms | ActiveRecord: 17.2ms | Allocations: 16593)
+
+
+Started GET "/users/find" for 127.0.0.1 at 2023-01-17 21:19:14 +0100
+Processing by UsersController#find as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  [1m[36mUser Load (16.2ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/find.html.erb:20
+  Rendered users/find.html.erb within layouts/application (Duration: 56.5ms | Allocations: 7052)
+  Rendered layout layouts/application.html.erb (Duration: 71.8ms | Allocations: 16259)
+Completed 200 OK in 74ms (Views: 56.2ms | ActiveRecord: 16.2ms | Allocations: 16592)
+
+
+Started GET "/users/find" for 127.0.0.1 at 2023-01-17 21:19:31 +0100
+Processing by UsersController#find as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  [1m[36mUser Load (19.5ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/find.html.erb:20
+  Rendered users/find.html.erb within layouts/application (Duration: 48.8ms | Allocations: 7050)
+  Rendered layout layouts/application.html.erb (Duration: 62.5ms | Allocations: 16231)
+Completed 200 OK in 64ms (Views: 43.6ms | ActiveRecord: 19.5ms | Allocations: 16563)
+
+
+Started GET "/users/find" for 127.0.0.1 at 2023-01-17 21:19:44 +0100
+Processing by UsersController#find as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  [1m[36mUser Load (17.4ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/find.html.erb:20
+  Rendered users/find.html.erb within layouts/application (Duration: 54.2ms | Allocations: 7054)
+  Rendered layout layouts/application.html.erb (Duration: 75.2ms | Allocations: 16243)
+Completed 200 OK in 77ms (Views: 58.5ms | ActiveRecord: 17.4ms | Allocations: 16575)
+
+
+Started GET "/users/find" for 127.0.0.1 at 2023-01-17 21:20:12 +0100
+Processing by UsersController#find as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  [1m[36mUser Load (17.3ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/find.html.erb:20
+  Rendered users/find.html.erb within layouts/application (Duration: 50.0ms | Allocations: 7058)
+  Rendered layout layouts/application.html.erb (Duration: 64.1ms | Allocations: 16268)
+Completed 200 OK in 66ms (Views: 47.5ms | ActiveRecord: 17.3ms | Allocations: 16600)
+
+
+Started GET "/users/find" for 127.0.0.1 at 2023-01-17 21:20:26 +0100
+Processing by UsersController#find as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  [1m[36mUser Load (18.8ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/find.html.erb:20
+  Rendered users/find.html.erb within layouts/application (Duration: 55.2ms | Allocations: 7057)
+  Rendered layout layouts/application.html.erb (Duration: 73.5ms | Allocations: 16261)
+Completed 200 OK in 76ms (Views: 55.3ms | ActiveRecord: 18.8ms | Allocations: 16593)
+
+
+Started GET "/users/index" for 127.0.0.1 at 2023-01-17 21:20:32 +0100
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (15.8ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:21
+  Rendered users/index.html.erb within layouts/application (Duration: 117.8ms | Allocations: 2481)
+  Rendered layout layouts/application.html.erb (Duration: 125.5ms | Allocations: 4927)
+Completed 200 OK in 127ms (Views: 110.5ms | ActiveRecord: 15.8ms | Allocations: 5248)
+
+
+Started GET "/users/index" for 127.0.0.1 at 2023-01-17 21:20:36 +0100
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (17.3ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:21
+  Rendered users/index.html.erb within layouts/application (Duration: 48.8ms | Allocations: 2476)
+  Rendered layout layouts/application.html.erb (Duration: 56.0ms | Allocations: 4938)
+Completed 200 OK in 58ms (Views: 39.6ms | ActiveRecord: 17.3ms | Allocations: 5259)
+
+
+Started GET "/users/index" for 127.0.0.1 at 2023-01-17 21:20:38 +0100
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (19.2ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:21
+  Rendered users/index.html.erb within layouts/application (Duration: 48.6ms | Allocations: 2484)
+  Rendered layout layouts/application.html.erb (Duration: 54.3ms | Allocations: 4952)
+Completed 200 OK in 56ms (Views: 35.8ms | ActiveRecord: 19.2ms | Allocations: 5274)
+
+
+Started GET "/users/index" for 127.0.0.1 at 2023-01-17 21:20:40 +0100
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (18.1ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:21
+  Rendered users/index.html.erb within layouts/application (Duration: 43.5ms | Allocations: 2478)
+  Rendered layout layouts/application.html.erb (Duration: 50.9ms | Allocations: 4952)
+Completed 200 OK in 53ms (Views: 33.8ms | ActiveRecord: 18.1ms | Allocations: 5274)
+
+
+Started GET "/users/find" for 127.0.0.1 at 2023-01-17 21:21:11 +0100
+Processing by UsersController#find as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  [1m[36mUser Load (18.3ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/find.html.erb:20
+  Rendered users/find.html.erb within layouts/application (Duration: 39.5ms | Allocations: 2619)
+  Rendered layout layouts/application.html.erb (Duration: 45.5ms | Allocations: 5362)
+Completed 200 OK in 50ms (Views: 29.7ms | ActiveRecord: 18.3ms | Allocations: 6383)
+
+
+Started GET "/users/find" for 127.0.0.1 at 2023-01-17 21:21:36 +0100
+Processing by UsersController#find as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  [1m[36mUser Load (17.3ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/find.html.erb:20
+  Rendered users/find.html.erb within layouts/application (Duration: 48.5ms | Allocations: 7051)
+  Rendered layout layouts/application.html.erb (Duration: 65.8ms | Allocations: 15752)
+Completed 200 OK in 68ms (Views: 49.6ms | ActiveRecord: 17.3ms | Allocations: 16085)
+
+
+Started GET "/users/index" for 127.0.0.1 at 2023-01-17 21:21:37 +0100
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (17.5ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:21
+  Rendered users/index.html.erb within layouts/application (Duration: 42.9ms | Allocations: 2817)
+  Rendered layout layouts/application.html.erb (Duration: 45.1ms | Allocations: 5265)
+Completed 200 OK in 46ms (Views: 28.0ms | ActiveRecord: 17.5ms | Allocations: 5642)
+
+
+Started GET "/users/index" for 127.0.0.1 at 2023-01-17 21:22:15 +0100
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (18.8ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:21
+  Rendered users/index.html.erb within layouts/application (Duration: 45.0ms | Allocations: 7415)
+  Rendered layout layouts/application.html.erb (Duration: 59.4ms | Allocations: 16623)
+Completed 200 OK in 61ms (Views: 41.3ms | ActiveRecord: 18.8ms | Allocations: 16944)
+
+
+Started GET "/users/find" for 127.0.0.1 at 2023-01-17 21:22:17 +0100
+Processing by UsersController#find as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  [1m[36mUser Load (18.1ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/find.html.erb:20
+  Rendered users/find.html.erb within layouts/application (Duration: 47.1ms | Allocations: 2174)
+  Rendered layout layouts/application.html.erb (Duration: 53.8ms | Allocations: 4632)
+Completed 200 OK in 56ms (Views: 37.0ms | ActiveRecord: 18.1ms | Allocations: 4965)
+
+
+Started GET "/users/find" for 127.0.0.1 at 2023-01-17 21:22:20 +0100
+Processing by UsersController#find as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  [1m[36mUser Load (17.6ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/find.html.erb:20
+  Rendered users/find.html.erb within layouts/application (Duration: 126.8ms | Allocations: 2169)
+  Rendered layout layouts/application.html.erb (Duration: 133.2ms | Allocations: 4621)
+Completed 200 OK in 135ms (Views: 116.4ms | ActiveRecord: 17.6ms | Allocations: 4954)
+
+
+Started GET "/users/find?search=Matis" for 127.0.0.1 at 2023-01-17 21:22:31 +0100
+Processing by UsersController#find as HTML
+  Parameters: {"search"=>"Matis"}
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  [1m[36mUser Load (19.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE (name LIKE '%Mat%')[0m
+  ↳ app/views/users/find.html.erb:20
+  Rendered users/find.html.erb within layouts/application (Duration: 28.0ms | Allocations: 1931)
+  Rendered layout layouts/application.html.erb (Duration: 36.1ms | Allocations: 4386)
+Completed 200 OK in 54ms (Views: 18.0ms | ActiveRecord: 19.4ms | Allocations: 4743)
+
+
+Started GET "/users/index" for 127.0.0.1 at 2023-01-17 21:23:11 +0100
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (16.3ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:21
+  Rendered users/index.html.erb within layouts/application (Duration: 41.4ms | Allocations: 2484)
+  Rendered layout layouts/application.html.erb (Duration: 47.7ms | Allocations: 4953)
+Completed 200 OK in 50ms (Views: 32.2ms | ActiveRecord: 16.3ms | Allocations: 5275)
+
+
+Started GET "/users/find" for 127.0.0.1 at 2023-01-17 21:23:34 +0100
+Processing by UsersController#find as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  [1m[36mUser Load (18.2ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/find.html.erb:20
+  Rendered users/find.html.erb within layouts/application (Duration: 39.3ms | Allocations: 2174)
+  Rendered layout layouts/application.html.erb (Duration: 44.8ms | Allocations: 4624)
+Completed 200 OK in 46ms (Views: 27.2ms | ActiveRecord: 18.2ms | Allocations: 4957)
+
+
+Started GET "/users/index" for 127.0.0.1 at 2023-01-17 21:24:51 +0100
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (17.7ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:21
+  Rendered users/index.html.erb within layouts/application (Duration: 49.9ms | Allocations: 6958)
+  Rendered layout layouts/application.html.erb (Duration: 56.2ms | Allocations: 16154)
+Completed 200 OK in 58ms (Views: 39.0ms | ActiveRecord: 17.7ms | Allocations: 16475)
+
+
+Started GET "/users/index" for 127.0.0.1 at 2023-01-17 21:24:54 +0100
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (17.7ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:21
+  Rendered users/index.html.erb within layouts/application (Duration: 45.8ms | Allocations: 2476)
+  Rendered layout layouts/application.html.erb (Duration: 50.8ms | Allocations: 4929)
+Completed 200 OK in 53ms (Views: 34.0ms | ActiveRecord: 17.7ms | Allocations: 5251)
+
+
+Started GET "/users/index" for 127.0.0.1 at 2023-01-17 21:24:57 +0100
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (17.4ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:21
+  Rendered users/index.html.erb within layouts/application (Duration: 42.8ms | Allocations: 3142)
+  Rendered layout layouts/application.html.erb (Duration: 48.7ms | Allocations: 5604)
+Completed 200 OK in 50ms (Views: 31.7ms | ActiveRecord: 17.4ms | Allocations: 5925)
+
+
+Started GET "/users/find" for 127.0.0.1 at 2023-01-17 21:25:06 +0100
+Processing by UsersController#find as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  [1m[36mUser Load (17.6ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/find.html.erb:20
+  Rendered users/find.html.erb within layouts/application (Duration: 48.1ms | Allocations: 2177)
+  Rendered layout layouts/application.html.erb (Duration: 53.5ms | Allocations: 4641)
+Completed 200 OK in 55ms (Views: 36.8ms | ActiveRecord: 17.6ms | Allocations: 4974)
+
+
+Started GET "/users/find" for 127.0.0.1 at 2023-01-17 21:25:10 +0100
+Processing by UsersController#find as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  [1m[36mUser Load (17.4ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/find.html.erb:20
+  Rendered users/find.html.erb within layouts/application (Duration: 43.0ms | Allocations: 2174)
+  Rendered layout layouts/application.html.erb (Duration: 49.3ms | Allocations: 4641)
+Completed 200 OK in 52ms (Views: 33.0ms | ActiveRecord: 17.4ms | Allocations: 4974)
+
+
+Started GET "/users/find" for 127.0.0.1 at 2023-01-17 21:25:12 +0100
+Processing by UsersController#find as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  [1m[36mUser Load (16.8ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/find.html.erb:20
+  Rendered users/find.html.erb within layouts/application (Duration: 48.6ms | Allocations: 2171)
+  Rendered layout layouts/application.html.erb (Duration: 53.8ms | Allocations: 4626)
+Completed 200 OK in 56ms (Views: 37.8ms | ActiveRecord: 16.8ms | Allocations: 4959)
+
+
+Started GET "/users/find" for 127.0.0.1 at 2023-01-17 21:25:13 +0100
+Processing by UsersController#find as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  [1m[36mUser Load (16.7ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/find.html.erb:20
+  Rendered users/find.html.erb within layouts/application (Duration: 40.3ms | Allocations: 2169)
+  Rendered layout layouts/application.html.erb (Duration: 44.9ms | Allocations: 4624)
+Completed 200 OK in 47ms (Views: 29.1ms | ActiveRecord: 16.7ms | Allocations: 4957)
+
+
+Started GET "/users/find" for 127.0.0.1 at 2023-01-17 21:25:16 +0100
+Processing by UsersController#find as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  [1m[36mUser Load (18.0ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/find.html.erb:20
+  Rendered users/find.html.erb within layouts/application (Duration: 42.2ms | Allocations: 2174)
+  Rendered layout layouts/application.html.erb (Duration: 47.7ms | Allocations: 4644)
+Completed 200 OK in 50ms (Views: 30.4ms | ActiveRecord: 18.0ms | Allocations: 4977)
+
+
+Started GET "/users/index" for 127.0.0.1 at 2023-01-17 21:25:46 +0100
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (17.1ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:21
+  Rendered users/index.html.erb within layouts/application (Duration: 38.9ms | Allocations: 2874)
+  Rendered layout layouts/application.html.erb (Duration: 43.9ms | Allocations: 5608)
+Completed 200 OK in 48ms (Views: 29.3ms | ActiveRecord: 17.1ms | Allocations: 6616)
+
+
+Started GET "/users/fid" for 127.0.0.1 at 2023-01-17 21:25:52 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/users/fid"):
+  
+Started GET "/users/find" for 127.0.0.1 at 2023-01-17 21:25:54 +0100
+Processing by UsersController#find as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  [1m[36mUser Load (20.8ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/find.html.erb:29
+  Rendered users/find.html.erb within layouts/application (Duration: 54.6ms | Allocations: 3030)
+  Rendered layout layouts/application.html.erb (Duration: 59.6ms | Allocations: 5495)
+Completed 200 OK in 63ms (Views: 40.5ms | ActiveRecord: 20.8ms | Allocations: 5885)
+
+
+Started GET "/users/find" for 127.0.0.1 at 2023-01-17 21:26:00 +0100
+Processing by UsersController#find as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  [1m[36mUser Load (17.2ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/find.html.erb:29
+  Rendered users/find.html.erb within layouts/application (Duration: 54.4ms | Allocations: 3093)
+  Rendered layout layouts/application.html.erb (Duration: 62.7ms | Allocations: 5839)
+Completed 200 OK in 73ms (Views: 47.7ms | ActiveRecord: 17.2ms | Allocations: 6858)
+
+
+Started GET "/users/find" for 127.0.0.1 at 2023-01-17 21:26:01 +0100
+Processing by UsersController#find as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  [1m[36mUser Load (17.3ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/find.html.erb:29
+  Rendered users/find.html.erb within layouts/application (Duration: 39.1ms | Allocations: 2598)
+  Rendered layout layouts/application.html.erb (Duration: 44.1ms | Allocations: 5060)
+Completed 200 OK in 46ms (Views: 27.6ms | ActiveRecord: 17.3ms | Allocations: 5394)
+
+
+Started GET "/users/find" for 127.0.0.1 at 2023-01-17 21:26:07 +0100
+Processing by UsersController#find as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  [1m[36mUser Load (30.7ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/find.html.erb:27
+  Rendered users/find.html.erb within layouts/application (Duration: 63.7ms | Allocations: 3077)
+  Rendered layout layouts/application.html.erb (Duration: 70.4ms | Allocations: 5797)
+Completed 200 OK in 74ms (Views: 42.1ms | ActiveRecord: 30.7ms | Allocations: 6816)
+
+
+Started GET "/users/find" for 127.0.0.1 at 2023-01-17 21:26:30 +0100
+Processing by UsersController#find as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  [1m[36mUser Load (16.6ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/find.html.erb:27
+  Rendered users/find.html.erb within layouts/application (Duration: 45.8ms | Allocations: 7440)
+  Rendered layout layouts/application.html.erb (Duration: 61.9ms | Allocations: 16633)
+Completed 200 OK in 63ms (Views: 45.7ms | ActiveRecord: 16.6ms | Allocations: 16966)
+
+
+Started GET "/users/find" for 127.0.0.1 at 2023-01-17 21:26:41 +0100
+Processing by UsersController#find as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  [1m[36mUser Load (17.3ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/find.html.erb:27
+  Rendered users/find.html.erb within layouts/application (Duration: 54.0ms | Allocations: 6845)
+  Rendered layout layouts/application.html.erb (Duration: 74.8ms | Allocations: 16052)
+Completed 200 OK in 77ms (Views: 58.2ms | ActiveRecord: 17.3ms | Allocations: 16385)
+
+
+Started GET "/users/find" for 127.0.0.1 at 2023-01-17 21:26:48 +0100
+Processing by UsersController#find as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  [1m[36mUser Load (16.8ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/find.html.erb:27
+  Rendered users/find.html.erb within layouts/application (Duration: 48.5ms | Allocations: 2638)
+  Rendered layout layouts/application.html.erb (Duration: 55.3ms | Allocations: 5097)
+Completed 200 OK in 57ms (Views: 39.3ms | ActiveRecord: 16.8ms | Allocations: 5430)
+
+
+Started GET "/users/find" for 127.0.0.1 at 2023-01-17 21:27:07 +0100
+Processing by UsersController#find as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  [1m[36mUser Load (17.6ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/find.html.erb:27
+  Rendered users/find.html.erb within layouts/application (Duration: 39.5ms | Allocations: 2595)
+  Rendered layout layouts/application.html.erb (Duration: 41.9ms | Allocations: 5056)
+Completed 200 OK in 44ms (Views: 25.3ms | ActiveRecord: 17.6ms | Allocations: 5389)
+
+
+Started GET "/users/find" for 127.0.0.1 at 2023-01-17 21:27:46 +0100
+Processing by UsersController#find as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  [1m[36mUser Load (16.5ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/find.html.erb:19
+  Rendered users/find.html.erb within layouts/application (Duration: 39.3ms | Allocations: 2853)
+  Rendered layout layouts/application.html.erb (Duration: 46.6ms | Allocations: 5619)
+Completed 200 OK in 52ms (Views: 33.8ms | ActiveRecord: 16.5ms | Allocations: 6637)
+
+
+Started GET "/users/find" for 127.0.0.1 at 2023-01-17 21:27:56 +0100
+Processing by UsersController#find as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  [1m[36mUser Load (16.7ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/find.html.erb:19
+  Rendered users/find.html.erb within layouts/application (Duration: 40.0ms | Allocations: 2470)
+  Rendered layout layouts/application.html.erb (Duration: 43.9ms | Allocations: 4922)
+Completed 200 OK in 46ms (Views: 28.0ms | ActiveRecord: 16.7ms | Allocations: 5256)
+
+
+Started GET "/users/find" for 127.0.0.1 at 2023-01-17 21:28:35 +0100
+Processing by UsersController#find as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  [1m[36mUser Load (18.1ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/find.html.erb:21
+  Rendered users/find.html.erb within layouts/application (Duration: 46.7ms | Allocations: 3067)
+  Rendered layout layouts/application.html.erb (Duration: 52.9ms | Allocations: 5803)
+Completed 200 OK in 60ms (Views: 38.9ms | ActiveRecord: 18.1ms | Allocations: 6822)
+
+
+Started GET "/users/fid" for 127.0.0.1 at 2023-01-17 21:29:06 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/users/fid"):
+  
+Started GET "/users/find" for 127.0.0.1 at 2023-01-17 21:29:08 +0100
+Processing by UsersController#find as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  [1m[36mUser Load (16.7ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/find.html.erb:21
+  Rendered users/find.html.erb within layouts/application (Duration: 45.1ms | Allocations: 2599)
+  Rendered layout layouts/application.html.erb (Duration: 51.5ms | Allocations: 5067)
+Completed 200 OK in 54ms (Views: 35.9ms | ActiveRecord: 16.7ms | Allocations: 5400)
+
+
+Started GET "/users/find" for 127.0.0.1 at 2023-01-17 21:29:29 +0100
+Processing by UsersController#find as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  [1m[36mUser Load (16.5ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/find.html.erb:21
+  Rendered users/find.html.erb within layouts/application (Duration: 46.8ms | Allocations: 2593)
+  Rendered layout layouts/application.html.erb (Duration: 72.3ms | Allocations: 14766)
+Completed 200 OK in 75ms (Views: 56.9ms | ActiveRecord: 16.5ms | Allocations: 15098)
+
+
+Started GET "/users/index" for 127.0.0.1 at 2023-01-17 21:29:37 +0100
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (17.4ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:21
+  Rendered users/index.html.erb within layouts/application (Duration: 44.8ms | Allocations: 5127)
+  Rendered layout layouts/application.html.erb (Duration: 50.5ms | Allocations: 7590)
+Completed 200 OK in 53ms (Views: 33.9ms | ActiveRecord: 17.4ms | Allocations: 7968)
+
+
+Started GET "/users/index" for 127.0.0.1 at 2023-01-17 21:30:55 +0100
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (18.3ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:19
+  Rendered users/index.html.erb within layouts/application (Duration: 52.2ms | Allocations: 7291)
+  Rendered layout layouts/application.html.erb (Duration: 71.5ms | Allocations: 16764)
+Completed 200 OK in 77ms (Views: 55.8ms | ActiveRecord: 18.3ms | Allocations: 17771)
+
+
+Started GET "/users/index" for 127.0.0.1 at 2023-01-17 21:31:07 +0100
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (18.0ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:19
+  Rendered users/index.html.erb within layouts/application (Duration: 54.8ms | Allocations: 7409)
+  Rendered layout layouts/application.html.erb (Duration: 72.9ms | Allocations: 16616)
+Completed 200 OK in 75ms (Views: 55.6ms | ActiveRecord: 18.0ms | Allocations: 16938)
+
+
+Started GET "/users/find" for 127.0.0.1 at 2023-01-17 21:31:12 +0100
+Processing by UsersController#find as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  [1m[36mUser Load (16.6ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/find.html.erb:21
+  Rendered users/find.html.erb within layouts/application (Duration: 42.7ms | Allocations: 3003)
+  Rendered layout layouts/application.html.erb (Duration: 49.1ms | Allocations: 5451)
+Completed 200 OK in 51ms (Views: 33.3ms | ActiveRecord: 16.6ms | Allocations: 5839)
+
+
+Started GET "/users/find" for 127.0.0.1 at 2023-01-17 21:31:17 +0100
+Processing by UsersController#find as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  [1m[36mUser Load (18.6ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/find.html.erb:21
+  Rendered users/find.html.erb within layouts/application (Duration: 50.4ms | Allocations: 2600)
+  Rendered layout layouts/application.html.erb (Duration: 57.1ms | Allocations: 5056)
+Completed 200 OK in 59ms (Views: 39.3ms | ActiveRecord: 18.6ms | Allocations: 5389)
+
+
+Started GET "/users/find" for 127.0.0.1 at 2023-01-17 21:31:19 +0100
+Processing by UsersController#find as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  [1m[36mUser Load (18.9ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/find.html.erb:21
+  Rendered users/find.html.erb within layouts/application (Duration: 78.3ms | Allocations: 2595)
+  Rendered layout layouts/application.html.erb (Duration: 86.5ms | Allocations: 5043)
+Completed 200 OK in 89ms (Views: 68.5ms | ActiveRecord: 18.9ms | Allocations: 5375)
+
+
+Started GET "/users/index" for 127.0.0.1 at 2023-01-17 21:32:00 +0100
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (21.6ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:19
+  Rendered users/index.html.erb within layouts/application (Duration: 44.6ms | Allocations: 2868)
+  Rendered layout layouts/application.html.erb (Duration: 53.1ms | Allocations: 5610)
+Completed 200 OK in 60ms (Views: 35.9ms | ActiveRecord: 21.6ms | Allocations: 6618)
+
+
+Started GET "/users/find" for 127.0.0.1 at 2023-01-17 21:32:17 +0100
+Processing by UsersController#find as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  [1m[36mUser Load (18.7ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/find.html.erb:21
+  Rendered users/find.html.erb within layouts/application (Duration: 45.4ms | Allocations: 3081)
+  Rendered layout layouts/application.html.erb (Duration: 51.7ms | Allocations: 5821)
+Completed 200 OK in 56ms (Views: 35.6ms | ActiveRecord: 18.7ms | Allocations: 6841)
+
+
+Started GET "/users/find" for 127.0.0.1 at 2023-01-17 21:32:24 +0100
+Processing by UsersController#find as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  [1m[36mUser Load (18.0ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/find.html.erb:21
+  Rendered users/find.html.erb within layouts/application (Duration: 50.4ms | Allocations: 2610)
+  Rendered layout layouts/application.html.erb (Duration: 56.7ms | Allocations: 5067)
+Completed 200 OK in 60ms (Views: 39.6ms | ActiveRecord: 18.0ms | Allocations: 5401)
+
+
+Started GET "/users/find" for 127.0.0.1 at 2023-01-17 21:33:39 +0100
+Processing by UsersController#find as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  [1m[36mUser Load (17.9ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/find.html.erb:21
+  Rendered users/find.html.erb within layouts/application (Duration: 59.7ms | Allocations: 7330)
+  Rendered layout layouts/application.html.erb (Duration: 82.4ms | Allocations: 16039)
+Completed 200 OK in 85ms (Views: 65.4ms | ActiveRecord: 17.9ms | Allocations: 16371)
+
+
+Started GET "/users/find" for 127.0.0.1 at 2023-01-17 21:33:54 +0100
+Processing by UsersController#find as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  [1m[36mUser Load (18.7ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/find.html.erb:21
+  Rendered users/find.html.erb within layouts/application (Duration: 55.3ms | Allocations: 7336)
+  Rendered layout layouts/application.html.erb (Duration: 74.9ms | Allocations: 16082)
+Completed 200 OK in 77ms (Views: 56.8ms | ActiveRecord: 18.7ms | Allocations: 16414)
+
+
+Started GET "/users/find" for 127.0.0.1 at 2023-01-17 21:34:06 +0100
+Processing by UsersController#find as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  [1m[36mUser Load (17.2ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/find.html.erb:21
+  Rendered users/find.html.erb within layouts/application (Duration: 46.3ms | Allocations: 7343)
+  Rendered layout layouts/application.html.erb (Duration: 62.7ms | Allocations: 16560)
+Completed 200 OK in 65ms (Views: 46.2ms | ActiveRecord: 17.2ms | Allocations: 16892)
+
+
+Started GET "/users/find" for 127.0.0.1 at 2023-01-17 21:34:09 +0100
+Processing by UsersController#find as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  [1m[36mUser Load (18.4ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/find.html.erb:21
+  Rendered users/find.html.erb within layouts/application (Duration: 46.6ms | Allocations: 7336)
+  Rendered layout layouts/application.html.erb (Duration: 64.2ms | Allocations: 16532)
+Completed 200 OK in 66ms (Views: 46.2ms | ActiveRecord: 18.4ms | Allocations: 16864)
+
+
+Started GET "/users/find" for 127.0.0.1 at 2023-01-17 21:34:13 +0100
+Processing by UsersController#find as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  [1m[36mUser Load (19.2ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/find.html.erb:21
+  Rendered users/find.html.erb within layouts/application (Duration: 48.0ms | Allocations: 7333)
+  Rendered layout layouts/application.html.erb (Duration: 68.3ms | Allocations: 16524)
+Completed 200 OK in 70ms (Views: 49.8ms | ActiveRecord: 19.2ms | Allocations: 16856)
+
+
+Started GET "/users/find" for 127.0.0.1 at 2023-01-17 21:34:35 +0100
+Processing by UsersController#find as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  [1m[36mUser Load (18.9ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/find.html.erb:21
+  Rendered users/find.html.erb within layouts/application (Duration: 58.6ms | Allocations: 7344)
+  Rendered layout layouts/application.html.erb (Duration: 80.2ms | Allocations: 16548)
+Completed 200 OK in 82ms (Views: 62.1ms | ActiveRecord: 18.9ms | Allocations: 16881)
+
+
+Started GET "/users/find" for 127.0.0.1 at 2023-01-17 21:34:40 +0100
+Processing by UsersController#find as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  [1m[36mUser Load (21.8ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/find.html.erb:21
+  Rendered users/find.html.erb within layouts/application (Duration: 48.9ms | Allocations: 7333)
+  Rendered layout layouts/application.html.erb (Duration: 66.3ms | Allocations: 16536)
+Completed 200 OK in 68ms (Views: 45.1ms | ActiveRecord: 21.8ms | Allocations: 16869)
+
+
+Started GET "/users/find" for 127.0.0.1 at 2023-01-17 21:34:46 +0100
+Processing by UsersController#find as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  [1m[36mUser Load (18.9ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/find.html.erb:21
+  Rendered users/find.html.erb within layouts/application (Duration: 48.5ms | Allocations: 6815)
+  Rendered layout layouts/application.html.erb (Duration: 67.0ms | Allocations: 16007)
+Completed 200 OK in 69ms (Views: 48.8ms | ActiveRecord: 18.9ms | Allocations: 16339)
+
+
+Started GET "/users/find" for 127.0.0.1 at 2023-01-17 21:34:57 +0100
+Processing by UsersController#find as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  [1m[36mUser Load (17.7ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/find.html.erb:21
+  Rendered users/find.html.erb within layouts/application (Duration: 42.9ms | Allocations: 3064)
+  Rendered layout layouts/application.html.erb (Duration: 48.9ms | Allocations: 5800)
+Completed 200 OK in 54ms (Views: 34.4ms | ActiveRecord: 17.7ms | Allocations: 6818)
+
+
+Started GET "/users/find" for 127.0.0.1 at 2023-01-17 21:34:58 +0100
+Processing by UsersController#find as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  [1m[36mUser Load (17.4ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/find.html.erb:21
+  Rendered users/find.html.erb within layouts/application (Duration: 44.5ms | Allocations: 2598)
+  Rendered layout layouts/application.html.erb (Duration: 46.8ms | Allocations: 5066)
+Completed 200 OK in 48ms (Views: 29.7ms | ActiveRecord: 17.4ms | Allocations: 5400)
+
+
+Started GET "/users/index" for 127.0.0.1 at 2023-01-17 21:35:32 +0100
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (20.8ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:19
+  Rendered users/index.html.erb within layouts/application (Duration: 44.6ms | Allocations: 2814)
+  Rendered layout layouts/application.html.erb (Duration: 51.2ms | Allocations: 5280)
+Completed 200 OK in 55ms (Views: 31.8ms | ActiveRecord: 20.8ms | Allocations: 5658)
+
+
+Started GET "/users/find" for 127.0.0.1 at 2023-01-17 21:36:18 +0100
+Processing by UsersController#find as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  [1m[36mUser Load (17.8ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/find.html.erb:23
+  Rendered users/find.html.erb within layouts/application (Duration: 40.8ms | Allocations: 3065)
+  Rendered layout layouts/application.html.erb (Duration: 49.9ms | Allocations: 5786)
+Completed 200 OK in 55ms (Views: 35.2ms | ActiveRecord: 17.8ms | Allocations: 6804)
+
+
+Started GET "/users/find" for 127.0.0.1 at 2023-01-17 21:37:10 +0100
+Processing by UsersController#find as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  [1m[36mUser Load (18.1ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/find.html.erb:23
+  Rendered users/find.html.erb within layouts/application (Duration: 42.0ms | Allocations: 2597)
+  Rendered layout layouts/application.html.erb (Duration: 73.3ms | Allocations: 14655)
+Completed 200 OK in 75ms (Views: 55.8ms | ActiveRecord: 18.1ms | Allocations: 14988)
+
+
+Started GET "/users/find" for 127.0.0.1 at 2023-01-17 21:37:22 +0100
+Processing by UsersController#find as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  [1m[36mUser Load (17.3ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/find.html.erb:23
+  Rendered users/find.html.erb within layouts/application (Duration: 43.8ms | Allocations: 2598)
+  Rendered layout layouts/application.html.erb (Duration: 51.0ms | Allocations: 5761)
+Completed 200 OK in 53ms (Views: 34.9ms | ActiveRecord: 17.3ms | Allocations: 6094)
+
+
+Started GET "/users/index" for 127.0.0.1 at 2023-01-17 21:37:48 +0100
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (18.9ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:19
+  Rendered users/index.html.erb within layouts/application (Duration: 44.4ms | Allocations: 2816)
+  Rendered layout layouts/application.html.erb (Duration: 50.6ms | Allocations: 5282)
+Completed 200 OK in 53ms (Views: 32.5ms | ActiveRecord: 18.9ms | Allocations: 5660)
+
+
+Started GET "/users/find" for 127.0.0.1 at 2023-01-17 21:39:46 +0100
+Processing by UsersController#find as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  [1m[36mUser Load (19.0ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/find.html.erb:23
+  Rendered users/find.html.erb within layouts/application (Duration: 44.0ms | Allocations: 2598)
+  Rendered layout layouts/application.html.erb (Duration: 51.6ms | Allocations: 5069)
+Completed 200 OK in 54ms (Views: 33.3ms | ActiveRecord: 19.0ms | Allocations: 5401)
+
+
+Started GET "/users/find" for 127.0.0.1 at 2023-01-17 21:39:46 +0100
+Processing by UsersController#find as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  [1m[36mUser Load (17.3ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/find.html.erb:23
+  Rendered users/find.html.erb within layouts/application (Duration: 36.7ms | Allocations: 11683)
+  Rendered layout layouts/application.html.erb (Duration: 39.3ms | Allocations: 14168)
+Completed 200 OK in 42ms (Views: 22.4ms | ActiveRecord: 17.3ms | Allocations: 14557)
+
+
+Started GET "/users/find?search=Matis" for 127.0.0.1 at 2023-01-17 21:39:48 +0100
+Processing by UsersController#find as HTML
+  Parameters: {"search"=>"Matis"}
+  Rendering layout layouts/application.html.erb
+  Rendering users/find.html.erb within layouts/application
+  [1m[36mUser Load (17.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE (name LIKE '%Mat%')[0m
+  ↳ app/views/users/find.html.erb:23
+  Rendered users/find.html.erb within layouts/application (Duration: 24.8ms | Allocations: 2360)
+  Rendered layout layouts/application.html.erb (Duration: 32.6ms | Allocations: 4834)
+Completed 200 OK in 54ms (Views: 16.6ms | ActiveRecord: 17.5ms | Allocations: 5192)
+
+

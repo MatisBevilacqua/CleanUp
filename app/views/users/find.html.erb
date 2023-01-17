@@ -1,22 +1,26 @@
-<%= stylesheet_link_tag "index.css" %>
+<%= stylesheet_link_tag "find.css" %>
 <header>
   <ul>
-    <a><i class="fa-solid fa-house on"></i></a>
-    <a><i class="fa-solid fa-magnifying-glass off"></i></a>
+    <a><i class="fa-solid fa-house off"></i></a>
+    <a><i class="fa-solid fa-magnifying-glass on"></i></a>
     <a><i class="fa-solid fa-user off"></i></a>
   </ul>
 </header>
 <section id="welcome">
   <div id="pictures_profils">
-    <%= image_tag "1673041909611.jpg" %>
+      <%= image_tag "1673041909611.jpg" %>
   </div>
   <p id="name">Hey Matis Bevilacqua !</p>
   <h1 id="pitch">Des experts pour redonner de l'eclat à votre interieur</h1>
-  <a id="get_profil">Accéder à mon profil</a>
+  <div class="d">
+     <%= form_tag(users_find_path, method: :get) do %>
+        <%= text_field_tag :search, params[:search], placeholder:'Rechercher une ville' %>
+    <% end %>
+  </div>
 </section>
+
 <section id="likes_profiles">
-  <h2 id="likes_title">Vous avez aimé</h2>
-  <% @users.each do |item| %>
+  <% @user.each do |item| %>
     <article class="users_profils">
       <div class="users_profils_top">
         <div class="users_profils_img">

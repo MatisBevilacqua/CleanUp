@@ -41,6 +41,7 @@ body{
     flex-direction: column;
     justify-content: center;
     margin-bottom: 5vh;
+    background: #88B2BA;
 }
 
 #name{
@@ -63,12 +64,13 @@ img{
 #get_profil{
     width: 88vw;
     height: 50px;
-    background:var(--bg);
+    background: var(--bg);
     border-radius: 15px;
     display: flex;
     justify-content: center;
     align-items: center;
     color: #FFF;
+    transform: translateY(2.5vh);
 }
 
 #pictures_profils{
@@ -204,10 +206,3 @@ ul{
     background: #F7F8FA;
 }
 
-#img_bottom{
-    width: 100%;
-    height: 35vh;
-    position: aboslute;
-    z-index: 1;
-    background: #88B2BA;
-}

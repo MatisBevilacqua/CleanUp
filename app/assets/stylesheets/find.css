@@ -1,4 +1,20 @@
-input{
-    width: 88vw;
+input {
+    width: calc(88vw - 4vw);
     height: 50px;
+    transform: translateY(50%);
+    background: var(--bg);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    outline: none;
+    border: none;
+    color: #FFF;
+    padding-left: 4vw;
+    font-size: 16px;
+}
+
+input::placeholder{
+    color: #FFF;
 }

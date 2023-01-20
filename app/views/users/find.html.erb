@@ -1,8 +1,8 @@
 <%= stylesheet_link_tag "find.css" %>
 <header>
   <ul>
-    <a><i class="fa-solid fa-house off"></i></a>
-    <a><i class="fa-solid fa-magnifying-glass on"></i></a>
+    <a href="<%= users_index_path %>"><i class="fa-solid fa-house off"></i></a>
+    <a href="<%= users_find_path %>"><i class="fa-solid fa-magnifying-glass on"></i></a>
     <a><i class="fa-solid fa-user off"></i></a>
   </ul>
 </header>
@@ -10,7 +10,7 @@
   <div id="pictures_profils">
       <%= image_tag "1673041909611.jpg" %>
   </div>
-  <p id="name">Hey Matis Bevilacqua !</p>
+  <p id="name">Rechercher</p>
   <h1 id="pitch">Des experts pour redonner de l'eclat à votre interieur</h1>
   <div class="d">
      <%= form_tag(users_find_path, method: :get) do %>

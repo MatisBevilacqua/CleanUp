@@ -82,8 +82,8 @@ img{
 }
 
 #pictures_profils > img{
-    width: 95%;
-    height: 100%;
+    width: 70px;
+    height: 80px;
     border-radius: 13px;
 }
 
@@ -110,7 +110,7 @@ img{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-bottom: 8vh;
+    margin-bottom: 5vh;
     color: #0C3469;
     border-top-right-radius: 15px;
 }
@@ -205,4 +205,5 @@ ul{
     padding-right: 2vw;
     background: #F7F8FA;
 }
+
 
